@@ -11,6 +11,11 @@ build/
 dist/
 .next/
 out/
+tsconfig.tsbuildinfo
+
+# Data & Local
+.data/
+.claude/settings.local.json
 
 # Misc
 .DS_Store
@@ -20,6 +25,8 @@ out/
 .env.development.local
 .env.test.local
 .env.production.local
+image.png
+image copy.png
 
 # Logs
 npm-debug.log*

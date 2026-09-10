@@ -1,9 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C /Users/nextleveluser/Skyhunter status)",
-      "Bash(git config *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
