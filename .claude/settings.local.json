@@ -8,7 +8,8 @@
       "Bash(npm run *)",
       "Bash(curl -s http://localhost:3000)",
       "Bash(pkill -f \"next dev\")",
-      "Bash(curl -s http://localhost:3000/signin)"
+      "Bash(curl -s http://localhost:3000/signin)",
+      "Bash(git commit -m 'Remove '\\\\''Start a project'\\\\'' button from navbar *)"
     ]
   }
 }
