@@ -152,7 +152,7 @@ export async function GET(
     await recordEvent("login", user.email).catch(() => {});
 
     const res = NextResponse.redirect(
-      new URL(isNewSignup ? "/dashboard?signup=1" : "/dashboard", req.url),
+      new URL(isNewSignup ? "/profile?signup=1" : "/profile", req.url),
     );
     const sc = sessionCookie({ email: user.email, name: user.name });
     res.cookies.set(sc.name, sc.value, sc.options);

@@ -14,7 +14,7 @@ export function FooterPrimaryCta() {
   // signed-in member never flashes the "Join" button.
   if (loading) return <div className="mt-5 h-[42px]" aria-hidden />;
   return user ? (
-    <Link href="/dashboard" className={BTN}>
+    <Link href="/profile" className={BTN}>
       Go to your dashboard →
     </Link>
   ) : (
@@ -32,7 +32,7 @@ export function FooterAccountLinks() {
   return user ? (
     <>
       <li>
-        <Link href="/dashboard" className="text-blue-300 hover:text-blue-400">
+        <Link href="/profile" className="text-blue-300 hover:text-blue-400">
           Your dashboard →
         </Link>
       </li>

@@ -116,13 +116,6 @@ export function AuthNav({ compact = false }: { compact?: boolean }) {
               </div>
               <div className="my-1 h-px bg-steel-line" />
               <Link
-                href="/dashboard"
-                onClick={() => setMenuOpen(false)}
-                className="block rounded-lg px-3 py-2 text-sm font-medium text-mist transition-colors hover:bg-abyss hover:text-chrome"
-              >
-                Dashboard
-              </Link>
-              <Link
                 href="/profile"
                 onClick={() => setMenuOpen(false)}
                 className="block rounded-lg px-3 py-2 text-sm text-mist transition-colors hover:bg-abyss hover:text-chrome"

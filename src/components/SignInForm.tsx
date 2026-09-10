@@ -50,7 +50,7 @@ export function SignInForm({
         throw new Error(json.error || "Something went wrong.");
       }
       await refresh();
-      router.push("/dashboard");
+      router.push("/profile");
       router.refresh();
     } catch (err) {
       setStatus("error");

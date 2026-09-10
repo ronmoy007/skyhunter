@@ -140,7 +140,7 @@ export function SignUpForm({
       // Dev mode: the account was created immediately (no email verification).
       if (!json.pending) {
         await refresh();
-        router.push("/dashboard?signup=1");
+        router.push("/profile?signup=1");
         router.refresh();
         return;
       }
@@ -176,7 +176,7 @@ export function SignUpForm({
         throw new Error(json.error || "Verification failed.");
       }
       await refresh(); // now signed in
-      router.push("/dashboard?signup=1");
+      router.push("/profile?signup=1");
       router.refresh();
     } catch (err) {
       setStatus("error");

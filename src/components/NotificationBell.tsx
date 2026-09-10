@@ -18,7 +18,7 @@ function linkFor(type: string): string | null {
     return "/requests";
   }
   if (type === "profile") return "/profile";
-  if (type === "welcome") return "/dashboard";
+  if (type === "welcome") return "/profile";
   return null;
 }
 

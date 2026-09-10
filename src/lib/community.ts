@@ -205,7 +205,7 @@ export const OFFERINGS: Offering[] = [
     icon: "users",
     title: "Client projects & bounties",
     body: "Paid agent-build leads from companies and other agencies in our network — typically $2.5K–$3.5K per project or retainer month.",
-    href: "/dashboard",
+    href: "/profile",
     cta: "See projects",
   },
   {
