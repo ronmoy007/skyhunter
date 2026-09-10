@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
 import { ThemeToggle } from "./ThemeToggle";
+import { AuthNav } from "./AuthNav";
 import { LarkBar } from "./LarkBar";
 
 const LINKS = [
@@ -28,6 +29,7 @@ export function Navbar() {
           <NavLinks links={LINKS} />
           <span className="ml-3 flex items-center gap-2.5">
             <ThemeToggle />
+            <AuthNav />
             <Link
               href="/start"
               className="rounded-lg border border-blue-500 px-5 py-2.5 text-base font-semibold text-blue-300 transition-colors hover:bg-blue-500 hover:text-white"
@@ -39,6 +41,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
+          <AuthNav compact />
           <Link
             href="/start"
             className="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-400"
