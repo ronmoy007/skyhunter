@@ -30,24 +30,12 @@ export function Navbar() {
           <span className="ml-3 flex items-center gap-2.5">
             <ThemeToggle />
             <AuthNav />
-            <Link
-              href="/start"
-              className="rounded-lg border border-blue-500 px-5 py-2.5 text-base font-semibold text-blue-300 transition-colors hover:bg-blue-500 hover:text-white"
-            >
-              Start a project
-            </Link>
           </span>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <AuthNav compact />
-          <Link
-            href="/start"
-            className="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-400"
-          >
-            Start a project
-          </Link>
         </div>
       </nav>
     </header>
