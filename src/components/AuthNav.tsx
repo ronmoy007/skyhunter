@@ -97,13 +97,6 @@ export function AuthNav({ compact = false }: { compact?: boolean }) {
               >
                 Requests
               </Link>
-              <Link
-                href="/industries"
-                onClick={() => setMenuOpen(false)}
-                className="block rounded-lg px-3 py-2 text-sm text-mist transition-colors hover:bg-abyss hover:text-chrome"
-              >
-                Community
-              </Link>
               <button
                 onClick={handleSignOut}
                 className="block w-full rounded-lg px-3 py-2 text-left text-sm text-mist transition-colors hover:bg-abyss hover:text-chrome"
