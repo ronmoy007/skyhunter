@@ -1,0 +1,663 @@
+[
+  {
+    "id": "skyhunter-partner-agent-builds",
+    "title": "Agent Build Partner (Overflow Work)",
+    "company": "SkyHunter Partners",
+    "location": "Remote (US · LATAM · Europe)",
+    "mode": "Remote",
+    "type": "Part-time",
+    "salary": "$2,500 – $6,000 / project",
+    "category": "Workflow automation",
+    "status": "Hiring",
+    "postedDaysAgo": 0,
+    "humanEdge": "We route vetted agent-build projects to shops with capacity — real paid client work, not spec. Take what fits your stack.",
+    "summary": "Join the SkyHunter partner pool and pick up overflow agent builds from our client pipeline. A few projects a month, fully remote across the US, LATAM, and Europe.",
+    "responsibilities": [
+      "Claim scoped agent/LLM builds that match your stack",
+      "Ship to a clear spec with an eval bar and a demo",
+      "Keep tidy handoff docs so clients can run it themselves"
+    ],
+    "broughtFrom": "Stack: shipped at least one LLM app in production — RAG, an agent, or a workflow integration.",
+    "tags": ["Overflow work", "Vetted clients", "US · LATAM · Europe"]
+  },
+  {
+    "id": "saas-onboarding-support-agent",
+    "title": "Onboarding Support Agent for a B2B SaaS",
+    "company": "Verity Labs",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$8k fixed",
+    "category": "Support agents",
+    "postedDaysAgo": 1,
+    "humanEdge": "An in-app agent that walks new users through setup, answers product questions from the docs, and books a human call when it's stuck.",
+    "summary": "Build a support agent that lives in their onboarding flow, resolves setup questions against product docs, and escalates cleanly. Ship it inside their web widget.",
+    "responsibilities": [
+      "Ground answers in their docs and changelog with citations",
+      "Detect frustration or edge cases and hand off to a human",
+      "Track resolution rate so the win is measurable"
+    ],
+    "broughtFrom": "Stack: an LLM API, retrieval over docs, and a chat widget integration.",
+    "tags": ["Support agents", "RAG", "Fixed budget"]
+  },
+  {
+    "id": "policy-rag-search-agent",
+    "title": "RAG Agent Over 10k HR Policy Docs",
+    "company": "Northlight AI",
+    "location": "Remote (US/EU)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$34k / 3-mo engagement",
+    "category": "RAG & Search",
+    "postedDaysAgo": 3,
+    "humanEdge": "Employees ask 'how much parental leave do I get in Ohio?' and get the exact, cited policy — not a wrong guess.",
+    "summary": "Build a retrieval agent over a large, versioned HR policy corpus with strict grounding and jurisdiction awareness. Accuracy and citations are the whole point.",
+    "responsibilities": [
+      "Chunk and embed versioned policies with metadata filtering",
+      "Return citation-backed answers with a confident-refusal fallback",
+      "Ship an eval set covering tricky multi-policy questions"
+    ],
+    "broughtFrom": "Stack: a vector DB, metadata-filtered retrieval, and RAG eval experience.",
+    "tags": ["RAG", "Citations", "3-mo engagement"]
+  },
+  {
+    "id": "llm-guardrails-redteam",
+    "title": "Red-Team & Harden a Customer-Facing Agent",
+    "company": "Aegis Research",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$120 / hr",
+    "category": "Fine-tuning & Evals",
+    "postedDaysAgo": 2,
+    "humanEdge": "Before their agent goes public, they need someone to break it — prompt injection, jailbreaks, data leaks — and then build the guardrails.",
+    "summary": "Adversarially test a production LLM agent, document repeatable failures, and implement input/output guardrails and an eval suite that keeps them fixed.",
+    "responsibilities": [
+      "Probe for prompt injection, jailbreaks, and data exfiltration",
+      "Implement input/output guardrails and safe-completion policies",
+      "Add a red-team eval suite that runs on every prompt change"
+    ],
+    "broughtFrom": "Stack: LLM security know-how, a guardrails library, and eval tooling.",
+    "tags": ["Guardrails", "Security", "Hourly"]
+  },
+  {
+    "id": "model-eval-selection",
+    "title": "Model Eval & Selection for a Fintech Agent",
+    "company": "Benchmark Collective",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$9k fixed",
+    "category": "Fine-tuning & Evals",
+    "postedDaysAgo": 4,
+    "humanEdge": "They want data, not vibes: which model + prompt is most accurate and cheapest for their reconciliation agent's real tasks.",
+    "summary": "Run a structured bake-off across models and prompts on the client's actual task set, then recommend a config with an accuracy-vs-cost tradeoff writeup.",
+    "responsibilities": [
+      "Build a graded task set from real client workflows",
+      "Benchmark models on accuracy, latency, and cost",
+      "Deliver a clear recommendation and reproducible eval"
+    ],
+    "broughtFrom": "Stack: eval frameworks, multi-provider LLM APIs, and a head for cost/latency tradeoffs.",
+    "tags": ["Evals", "Model selection", "Fixed budget"]
+  },
+  {
+    "id": "prompt-optimization-pass",
+    "title": "Prompt & Retrieval Tuning for a RAG App",
+    "company": "Lucid Systems",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$95 / hr",
+    "category": "RAG & Search",
+    "postedDaysAgo": 5,
+    "humanEdge": "Their RAG app works 70% of the time — they need someone to close the gap with better chunking, reranking, and prompts.",
+    "summary": "Audit an existing RAG pipeline and lift answer quality: fix chunking, add reranking, tighten prompts, and prove the gain with before/after evals.",
+    "responsibilities": [
+      "Diagnose retrieval failures with an eval-driven approach",
+      "Improve chunking, add a reranker, and tune the answer prompt",
+      "Report measurable quality gains against a fixed test set"
+    ],
+    "broughtFrom": "Stack: RAG internals, rerankers, and prompt engineering with evals.",
+    "tags": ["RAG", "Reranking", "Hourly"]
+  },
+  {
+    "id": "tier1-support-deflection-agent",
+    "title": "Tier-1 Deflection Agent for a Telecom",
+    "company": "Relay Support Co.",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$14k fixed",
+    "category": "Support agents",
+    "postedDaysAgo": 2,
+    "humanEdge": "The agent handles billing, plan changes, and outage FAQs end to end, and only routes true edge cases to human reps.",
+    "summary": "Build a Tier-1 support agent integrated with their account systems that resolves common requests and hands off complex ones with full context.",
+    "responsibilities": [
+      "Wire the agent to billing and account APIs with safe actions",
+      "Resolve high-volume intents and draft replies for the rest",
+      "Instrument deflection and hand-off quality"
+    ],
+    "broughtFrom": "Stack: an agent framework, internal API integration, and tool-use design.",
+    "tags": ["Support agents", "Tool use", "Fixed budget"]
+  },
+  {
+    "id": "moderation-classification-agent",
+    "title": "LLM Moderation Pipeline for a Marketplace",
+    "company": "Haven Trust & Safety",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$10k fixed",
+    "category": "Data & Analytics",
+    "postedDaysAgo": 6,
+    "humanEdge": "An LLM classifier that reads listings and messages, catches policy violations with nuance, and routes the gray-area cases to humans.",
+    "summary": "Build a content-moderation pipeline that scores listings and messages against policy, auto-actions clear cases, and queues ambiguous ones with an explanation.",
+    "responsibilities": [
+      "Design a policy-aware classification pipeline with an LLM",
+      "Calibrate thresholds against a labeled eval set",
+      "Route uncertain cases to human review with rationale"
+    ],
+    "broughtFrom": "Stack: LLM classification, eval/calibration, and a queueing integration.",
+    "tags": ["Classification", "Trust & Safety", "Fixed budget"]
+  },
+  {
+    "id": "semantic-search-relevance-tuning",
+    "title": "Semantic Search Relevance for a Content Site",
+    "company": "Wayfinder Data",
+    "location": "Remote (US/EU)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$85 / hr",
+    "category": "RAG & Search",
+    "postedDaysAgo": 7,
+    "humanEdge": "Their search returns near-misses; they need embeddings + reranking so results actually match what readers meant.",
+    "summary": "Upgrade a keyword search to hybrid semantic search over a large content library and tune relevance with a real query eval set.",
+    "responsibilities": [
+      "Add embeddings + hybrid retrieval to the existing search",
+      "Tune relevance against a labeled query set",
+      "Ship latency and quality benchmarks"
+    ],
+    "broughtFrom": "Stack: embeddings, a vector store, and search-relevance evaluation.",
+    "tags": ["Semantic search", "Reranking", "Hourly"]
+  },
+  {
+    "id": "citation-verification-agent",
+    "title": "Citation-Verification Agent for a Research Tool",
+    "company": "Ledger & Proof",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$8.5k fixed",
+    "category": "RAG & Search",
+    "postedDaysAgo": 3,
+    "humanEdge": "An agent that checks whether each generated claim is actually supported by its cited source — killing hallucinations before they ship.",
+    "summary": "Build a verification layer that cross-checks the app's generated claims against retrieved sources and flags or rewrites anything unsupported.",
+    "responsibilities": [
+      "Extract claims and match them to supporting passages",
+      "Flag or auto-correct unsupported statements",
+      "Add an eval measuring grounding faithfulness"
+    ],
+    "broughtFrom": "Stack: RAG, NLI/faithfulness scoring, and an LLM API.",
+    "tags": ["Grounding", "RAG", "Fixed budget"]
+  },
+  {
+    "id": "training-data-pipeline-build",
+    "title": "Synthetic Data Pipeline for Fine-Tuning",
+    "company": "Groundtruth Labs",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$9.5k fixed",
+    "category": "Fine-tuning & Evals",
+    "postedDaysAgo": 4,
+    "humanEdge": "They need a clean, deduped, high-quality dataset to fine-tune a small model — generated, filtered, and validated by an automated pipeline.",
+    "summary": "Build a pipeline that generates and curates training data for a domain fine-tune: synthesize examples, filter with quality checks, and produce a validated dataset.",
+    "responsibilities": [
+      "Generate and augment task-specific training examples",
+      "Filter for quality, dedupe, and balance the set",
+      "Deliver a documented, versioned dataset + fine-tune baseline"
+    ],
+    "broughtFrom": "Stack: data pipelines, synthetic-data generation, and fine-tuning basics.",
+    "tags": ["Fine-tuning", "Data pipeline", "Fixed budget"]
+  },
+  {
+    "id": "brand-voice-copy-agent",
+    "title": "On-Brand Copy Agent for a Marketing Team",
+    "company": "Draft House",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$7k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 2,
+    "humanEdge": "An agent that drafts campaign copy in the client's exact brand voice, pulling live product facts so nothing is invented.",
+    "summary": "Build a copy-generation agent grounded in a brand style guide and product catalog, producing on-voice drafts for human review inside their CMS.",
+    "responsibilities": [
+      "Encode brand voice and constraints into a reusable prompt system",
+      "Ground drafts in live product data to avoid invented claims",
+      "Ship a review workflow with easy edits and approval"
+    ],
+    "broughtFrom": "Stack: an LLM API, retrieval over brand/product data, and a CMS integration.",
+    "tags": ["Content agent", "Brand voice", "Fixed budget"]
+  },
+  {
+    "id": "contract-review-agent",
+    "title": "Contract-Review Agent for a Procurement Team",
+    "company": "Clearline Legal Ops",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$13k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 5,
+    "humanEdge": "An agent that reads vendor contracts, extracts key terms, and flags clauses that break company policy — a first-pass reviewer that never tires.",
+    "summary": "Build a contract-analysis agent that extracts obligations, dates, and risky clauses from uploaded agreements and produces a reviewer-ready summary.",
+    "responsibilities": [
+      "Extract structured terms and obligations from contract PDFs",
+      "Flag non-standard or policy-violating clauses with rationale",
+      "Output a summary the legal team can action fast"
+    ],
+    "broughtFrom": "Stack: document extraction, an LLM, and structured-output validation.",
+    "tags": ["Document AI", "Legal", "Fixed budget"]
+  },
+  {
+    "id": "in-app-copilot-build",
+    "title": "In-App Copilot for a Design SaaS",
+    "company": "Northgate Product Studio",
+    "location": "Remote (US/EU)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$16k fixed",
+    "category": "Support agents",
+    "postedDaysAgo": 3,
+    "humanEdge": "A copilot that answers 'how do I do X in this tool?' and can actually take the action for the user — support and productivity in one.",
+    "summary": "Build an in-product assistant that answers usage questions from the docs and executes common actions via the app's API, all inside a sidebar UI.",
+    "responsibilities": [
+      "Ground answers in product docs with citations",
+      "Expose safe, tool-use actions the copilot can take",
+      "Ship a polished sidebar UX with streaming responses"
+    ],
+    "broughtFrom": "Stack: TypeScript/React, an LLM with tool use, and product API integration.",
+    "tags": ["Copilot", "Tool use", "Fixed budget"]
+  },
+  {
+    "id": "voice-ivr-replacement-agent",
+    "title": "Voice IVR Replacement for an Insurer",
+    "company": "Resonant Voice AI",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$18k fixed",
+    "category": "Voice agents",
+    "postedDaysAgo": 6,
+    "humanEdge": "Replace the dreaded press-1-press-2 phone tree with a voice agent that understands what callers want and routes or resolves it.",
+    "summary": "Build a conversational voice agent to replace a legacy IVR: natural intent handling, account lookups, and clean transfers to the right human team.",
+    "responsibilities": [
+      "Design conversational flows that replace menu trees",
+      "Integrate account lookups with low-latency voice",
+      "Handle transfers and fallbacks gracefully"
+    ],
+    "broughtFrom": "Stack: a voice/telephony platform, an LLM, and backend API integration.",
+    "tags": ["Voice", "Telephony", "Fixed budget"]
+  },
+  {
+    "id": "meeting-notes-action-agent",
+    "title": "Meeting-Notes-to-Action Agent",
+    "company": "Verbatim Works",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$6.5k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 4,
+    "humanEdge": "An agent that turns raw call transcripts into clean summaries, decisions, and tasks pushed straight into the client's project tool.",
+    "summary": "Build a pipeline that ingests meeting transcripts, produces structured summaries and action items, and creates tasks in their PM system automatically.",
+    "responsibilities": [
+      "Summarize transcripts into decisions and owners",
+      "Extract action items as structured tasks",
+      "Push tasks to their PM tool via API"
+    ],
+    "broughtFrom": "Stack: an LLM, structured extraction, and a PM-tool API integration.",
+    "tags": ["Automation", "Summarization", "Fixed budget"]
+  },
+  {
+    "id": "multilingual-support-agent",
+    "title": "Multilingual Support Agent for a Travel App",
+    "company": "Meridian Global Support",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$11k fixed",
+    "category": "Support agents",
+    "postedDaysAgo": 5,
+    "humanEdge": "One agent that supports customers in 12 languages, grounded in the same knowledge base, so the client skips staffing per-region teams.",
+    "summary": "Build a multilingual support agent that detects language, answers from a shared KB, and keeps tone natural across locales, with human handoff per region.",
+    "responsibilities": [
+      "Detect language and respond natively across 12 locales",
+      "Ground answers in a shared, translated knowledge base",
+      "Add per-locale eval to catch translation drift"
+    ],
+    "broughtFrom": "Stack: an LLM strong at multilingual output, retrieval, and locale-aware evals.",
+    "tags": ["Support agents", "Multilingual", "Fixed budget"]
+  },
+  {
+    "id": "social-listening-analytics-agent",
+    "title": "Social Listening Agent for a Consumer Brand",
+    "company": "Bright Harbor Brands",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$100 / hr",
+    "category": "Data & Analytics",
+    "postedDaysAgo": 2,
+    "humanEdge": "An agent that reads thousands of mentions daily, clusters themes, and surfaces what's actually trending — not a keyword dashboard.",
+    "summary": "Build an analysis agent that ingests social mentions, classifies sentiment and topics, and produces a weekly narrative of what's moving and why.",
+    "responsibilities": [
+      "Ingest and dedupe mentions across sources",
+      "Cluster topics and score sentiment with an LLM",
+      "Generate a weekly insight digest for the brand team"
+    ],
+    "broughtFrom": "Stack: data ingestion, LLM classification/clustering, and reporting.",
+    "tags": ["Analytics", "Sentiment", "Hourly"]
+  },
+  {
+    "id": "podcast-repurposing-agent",
+    "title": "Content-Repurposing Agent for a Media Co.",
+    "company": "Longform Media Co.",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$7.5k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 7,
+    "humanEdge": "An agent that turns each episode transcript into show notes, clips, and social posts on brand — a content team in a box.",
+    "summary": "Build a pipeline that takes long-form transcripts and generates show notes, timestamped highlights, and platform-specific social posts for review.",
+    "responsibilities": [
+      "Generate show notes and chapter highlights from transcripts",
+      "Draft platform-specific posts in the brand voice",
+      "Queue everything for one-click human approval"
+    ],
+    "broughtFrom": "Stack: an LLM, transcript processing, and a publishing-tool integration.",
+    "tags": ["Automation", "Content", "Fixed budget"]
+  },
+  {
+    "id": "helpdesk-copilot-for-agents",
+    "title": "Agent-Assist Copilot for a Support Team",
+    "company": "Kindred Helpdesk",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$12k fixed",
+    "category": "Support agents",
+    "postedDaysAgo": 1,
+    "humanEdge": "A copilot beside human reps that drafts replies, pulls the right KB article, and suggests next steps — cutting handle time in half.",
+    "summary": "Build an agent-assist copilot embedded in their helpdesk that suggests grounded reply drafts and surfaces relevant context in real time.",
+    "responsibilities": [
+      "Draft grounded reply suggestions from KB + ticket history",
+      "Surface relevant articles and account context inline",
+      "Measure impact on handle time and CSAT"
+    ],
+    "broughtFrom": "Stack: a helpdesk API, retrieval, and an LLM with streaming.",
+    "tags": ["Agent-assist", "Support agents", "Fixed budget"]
+  },
+  {
+    "id": "clinical-intake-agent",
+    "title": "Clinical Intake Agent for a Telehealth Co.",
+    "company": "Willowbrook Health",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$15k fixed",
+    "category": "Voice agents",
+    "postedDaysAgo": 2,
+    "humanEdge": "A voice-and-chat agent that collects patient history before appointments and structures it for the clinician — safely, with strict guardrails.",
+    "summary": "Build an intake agent that gathers structured medical history via voice or chat, follows a clinical protocol, and hands a clean summary to the provider.",
+    "responsibilities": [
+      "Follow a clinical intake protocol with safe, bounded questions",
+      "Produce structured, clinician-ready summaries",
+      "Enforce strict guardrails and human escalation rules"
+    ],
+    "broughtFrom": "Stack: LLM + voice, structured output, and healthcare-grade guardrails.",
+    "tags": ["Voice", "Healthcare", "Fixed budget"]
+  },
+  {
+    "id": "onboarding-workflow-agent",
+    "title": "Employee Onboarding Agent for HR",
+    "company": "Steady Ground HR Tech",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$8k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 3,
+    "humanEdge": "An agent that guides new hires through paperwork, answers policy questions, and files everything — so HR stops chasing forms.",
+    "summary": "Build an onboarding agent that answers new-hire questions from policy docs and orchestrates the setup checklist across their HR systems.",
+    "responsibilities": [
+      "Answer policy questions with cited, grounded responses",
+      "Orchestrate onboarding tasks across HR tools",
+      "Track completion and nudge on missing steps"
+    ],
+    "broughtFrom": "Stack: retrieval over policy docs, an agent framework, and HR-tool APIs.",
+    "tags": ["Automation", "HR", "Fixed budget"]
+  },
+  {
+    "id": "community-qa-agent",
+    "title": "Community Q&A Agent for a Dev Platform",
+    "company": "Commons Collective",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$7k fixed",
+    "category": "RAG & Search",
+    "postedDaysAgo": 5,
+    "humanEdge": "An agent that answers developer questions from docs, past threads, and code samples — cited, so the community trusts it.",
+    "summary": "Build a Q&A agent over their docs and forum history that gives cited answers in Discord and on-site, and defers to humans when unsure.",
+    "responsibilities": [
+      "Index docs, forum threads, and code samples",
+      "Answer with citations and confident refusal when unsure",
+      "Ship Discord and web entry points"
+    ],
+    "broughtFrom": "Stack: retrieval, an LLM, and a bot/webhook integration.",
+    "tags": ["RAG", "Developer tools", "Fixed budget"]
+  },
+  {
+    "id": "claims-processing-agent",
+    "title": "Claims Triage Agent for an Insurer",
+    "company": "Northstar Insurance Ops",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$16k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 4,
+    "humanEdge": "An agent that reads incoming claims, checks completeness, extracts key fields, and routes each to the right queue — cutting days off the cycle.",
+    "summary": "Build a claims-intake agent that validates submissions, extracts structured data from attachments, and routes by type and priority with a full audit trail.",
+    "responsibilities": [
+      "Validate and extract data from claim forms and attachments",
+      "Route claims by type and priority with rationale",
+      "Log every decision for compliance review"
+    ],
+    "broughtFrom": "Stack: document extraction, an LLM, and workflow/queue integration.",
+    "tags": ["Document AI", "Insurance", "Fixed budget"]
+  },
+  {
+    "id": "founder-inbox-agent",
+    "title": "Inbox Triage Agent for a Busy Founder",
+    "company": "Anchor & Co.",
+    "location": "Remote (US/EU)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$90 / hr",
+    "category": "Workflow automation",
+    "postedDaysAgo": 2,
+    "humanEdge": "An agent that sorts a founder's inbox, drafts replies in their voice, and flags what truly needs them — a chief-of-staff for email.",
+    "summary": "Build a personal email agent that classifies, prioritizes, and drafts replies in the founder's voice, all held for one-tap approval.",
+    "responsibilities": [
+      "Classify and prioritize incoming email by intent",
+      "Draft on-voice replies for human approval",
+      "Learn from edits to improve over time"
+    ],
+    "broughtFrom": "Stack: an email API, an LLM, and prompt-based voice matching.",
+    "tags": ["Automation", "Personal agent", "Hourly"]
+  },
+  {
+    "id": "data-quality-agent",
+    "title": "Data-Quality Agent for a Data Team",
+    "company": "Cornerstone Data",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$95 / hr",
+    "category": "Data & Analytics",
+    "postedDaysAgo": 6,
+    "humanEdge": "An agent that scans datasets for anomalies an automated check would miss — plausible-but-wrong values — and explains what's off.",
+    "summary": "Build an LLM-assisted data-quality agent that profiles tables, detects suspicious records, and produces human-readable issue reports for the data team.",
+    "responsibilities": [
+      "Profile datasets and detect anomalies with LLM + rules",
+      "Explain each flagged issue in plain language",
+      "Integrate into their data pipeline as a check step"
+    ],
+    "broughtFrom": "Stack: SQL/data tooling, an LLM, and pipeline integration.",
+    "tags": ["Analytics", "Data quality", "Hourly"]
+  },
+  {
+    "id": "ops-slack-agent",
+    "title": "Ops Slack Agent for a Remote Team",
+    "company": "Tideline Operations",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$7.5k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 3,
+    "humanEdge": "A Slack agent the team messages to run routine ops — pull a report, kick off a workflow, check a status — without opening five tools.",
+    "summary": "Build a Slack-native agent that exposes their common ops tasks as safe tool calls, so the team can trigger workflows and lookups by chatting.",
+    "responsibilities": [
+      "Expose ops tasks as safe, permissioned tool calls",
+      "Handle multi-step requests conversationally in Slack",
+      "Add audit logging and approval for sensitive actions"
+    ],
+    "broughtFrom": "Stack: Slack API, an agent with tool use, and internal-tool integration.",
+    "tags": ["Slack agent", "Tool use", "Fixed budget"]
+  },
+  {
+    "id": "finance-reconciliation-agent",
+    "title": "Reconciliation Agent for a Bookkeeping Firm",
+    "company": "Balance Ledger Co.",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$10k fixed",
+    "category": "Data & Analytics",
+    "postedDaysAgo": 5,
+    "humanEdge": "An agent that matches transactions to records, categorizes them, and flags the messy exceptions a human should eyeball — clean books, faster.",
+    "summary": "Build a reconciliation agent that ingests transactions, matches and categorizes them against the ledger, and surfaces exceptions with explanations.",
+    "responsibilities": [
+      "Match and categorize transactions against the ledger",
+      "Flag anomalies and duplicates with rationale",
+      "Export clean records and an exceptions report"
+    ],
+    "broughtFrom": "Stack: an LLM, accounting-data integration, and structured validation.",
+    "tags": ["Analytics", "Finance", "Fixed budget"]
+  },
+  {
+    "id": "dispatch-scheduling-agent",
+    "title": "Scheduling Agent for a Field-Service Co.",
+    "company": "Routeworks",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$9k fixed",
+    "category": "Workflow automation",
+    "postedDaysAgo": 4,
+    "humanEdge": "An agent that takes inbound job requests, checks technician availability, and books the slot — re-juggling in real time when plans change.",
+    "summary": "Build a scheduling agent that handles inbound service requests, optimizes against technician availability and location, and confirms bookings automatically.",
+    "responsibilities": [
+      "Parse service requests and check live availability",
+      "Assign and confirm slots with route awareness",
+      "Handle changes and conflicts gracefully"
+    ],
+    "broughtFrom": "Stack: an LLM, scheduling/calendar APIs, and constraint handling.",
+    "tags": ["Automation", "Scheduling", "Fixed budget"]
+  },
+  {
+    "id": "tutor-agent-build",
+    "title": "Adaptive Tutor Agent for an EdTech Startup",
+    "company": "Second Draft EdTech",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$13k fixed",
+    "category": "Support agents",
+    "postedDaysAgo": 2,
+    "humanEdge": "A tutoring agent that notices where a learner is stuck, explains it a different way, and adapts — grounded in the course material.",
+    "summary": "Build an adaptive tutor agent over their curriculum that answers questions, checks understanding, and adjusts explanations to each learner.",
+    "responsibilities": [
+      "Ground tutoring in the course content with citations",
+      "Assess understanding and re-explain adaptively",
+      "Add safety guardrails for a student audience"
+    ],
+    "broughtFrom": "Stack: retrieval over curriculum, an LLM, and a learner-facing UI.",
+    "tags": ["Tutor agent", "EdTech", "Fixed budget"]
+  },
+  {
+    "id": "language-practice-voice-agent",
+    "title": "Language-Practice Voice Agent",
+    "company": "Openworld Languages",
+    "location": "Remote (Global)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$11k fixed",
+    "category": "Voice agents",
+    "postedDaysAgo": 5,
+    "humanEdge": "A voice agent learners talk to for real conversation practice — it corrects gently, adapts to level, and never gets tired of repeating.",
+    "summary": "Build a low-latency voice agent for spoken language practice that holds natural conversation, gives feedback, and tracks progress per learner.",
+    "responsibilities": [
+      "Build natural spoken conversation with quick turn-taking",
+      "Give gentle, level-aware corrections",
+      "Track learner progress across sessions"
+    ],
+    "broughtFrom": "Stack: a voice platform, an LLM, and low-latency audio handling.",
+    "tags": ["Voice", "EdTech", "Fixed budget"]
+  },
+  {
+    "id": "course-eval-agent",
+    "title": "Content-QA Agent for a Course Platform",
+    "company": "Lumen Learning Studio",
+    "location": "Remote (US/EU)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$8k fixed",
+    "category": "Fine-tuning & Evals",
+    "postedDaysAgo": 6,
+    "humanEdge": "An agent that reviews AI-generated lessons for accuracy and clarity, and scores whether they'll actually teach — a QA gate before publish.",
+    "summary": "Build an evaluation agent that reviews generated course content against accuracy and clarity rubrics and blocks weak lessons before they ship.",
+    "responsibilities": [
+      "Score lessons against accuracy and clarity rubrics",
+      "Flag confusing or wrong content with rationale",
+      "Gate publishing on the eval result"
+    ],
+    "broughtFrom": "Stack: LLM-as-judge design, rubric eval, and a publishing integration.",
+    "tags": ["Evals", "EdTech", "Fixed budget"]
+  },
+  {
+    "id": "knowledge-base-generation-agent",
+    "title": "KB-Generation Agent for a Support Org",
+    "company": "Foundry Knowledge",
+    "location": "Remote (US)",
+    "mode": "Remote",
+    "type": "Contract",
+    "salary": "$9.5k fixed",
+    "category": "RAG & Search",
+    "postedDaysAgo": 3,
+    "humanEdge": "An agent that mines resolved tickets to draft the missing help-center articles — turning tribal knowledge into a searchable KB.",
+    "summary": "Build a pipeline that clusters resolved support tickets, drafts help-center articles for the gaps, and feeds them back into a searchable knowledge base.",
+    "responsibilities": [
+      "Cluster resolved tickets to find KB gaps",
+      "Draft grounded articles for human review",
+      "Index approved articles for retrieval"
+    ],
+    "broughtFrom": "Stack: an LLM, clustering, and retrieval/indexing.",
+    "tags": ["RAG", "Knowledge base", "Fixed budget"]
+  }
+]

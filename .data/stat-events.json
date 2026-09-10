@@ -1,0 +1,518 @@
+[
+  {
+    "id": "3f133c47-cc6e-4bc3-bc4b-1045758f7a74",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T22:52:10.955Z"
+  },
+  {
+    "id": "a5e82b61-0bf5-425e-a21e-4cf9e3207a74",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T22:56:41.384Z"
+  },
+  {
+    "id": "18b59eaa-e355-4c33-a5b3-7b0ba6c5a351",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T22:57:33.779Z"
+  },
+  {
+    "id": "d3542afc-d611-4414-a29d-0a6d07a022de",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:00:47.623Z"
+  },
+  {
+    "id": "008b5991-4bc2-4725-b0c7-1de5b881a82b",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:00:58.647Z"
+  },
+  {
+    "id": "70819616-d742-48ed-8110-7ad0e9fdae07",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:01:31.734Z"
+  },
+  {
+    "id": "dd540081-260e-4499-8796-032aef2478f1",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:10:59.289Z"
+  },
+  {
+    "id": "ac9a962f-ae56-40f3-ab1c-5eeee6e254d6",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:11:00.637Z"
+  },
+  {
+    "id": "0d530bff-67c6-4910-a953-7b3115554a6e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:11:48.813Z"
+  },
+  {
+    "id": "7ee9986f-fa55-4f2b-bbdc-db4cf5787937",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:14:05.567Z"
+  },
+  {
+    "id": "0252c9ef-d61b-412a-9bc7-13c8b926fc64",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:14:11.495Z"
+  },
+  {
+    "id": "dbfce65b-12ea-4145-b7e8-85817b41ce09",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:34:39.167Z"
+  },
+  {
+    "id": "077e982c-cdab-4d43-a182-5142be9aca90",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:34:41.245Z"
+  },
+  {
+    "id": "1aa8c8b5-1681-4ca0-b48c-d6c4baac8338",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:35:55.612Z"
+  },
+  {
+    "id": "ab0bdf83-daba-4550-a553-64f64b3b7075",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:37:49.515Z"
+  },
+  {
+    "id": "191532b3-d9fd-44de-917a-4acd12da79fd",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:37:51.568Z"
+  },
+  {
+    "id": "a544bb06-6cd5-4a93-84c6-5474942102e0",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:39:06.834Z"
+  },
+  {
+    "id": "dddf1992-37a6-4edf-b28c-28dcdc0f0d60",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:42:48.059Z"
+  },
+  {
+    "id": "53f5cc23-3e07-49ab-9794-0309fd6a812b",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:42:48.028Z"
+  },
+  {
+    "id": "85861b8f-011f-4fb7-8b08-f48a99510b17",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:43:41.825Z"
+  },
+  {
+    "id": "439d9772-402c-4be2-8c82-6b7e23f20c8f",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:44:19.378Z"
+  },
+  {
+    "id": "865c37e8-813d-4e65-9a80-d8560acde6a2",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-29T23:44:22.164Z"
+  },
+  {
+    "id": "9ce61d69-686f-48e3-a575-7d8081970940",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T00:01:46.065Z"
+  },
+  {
+    "id": "0efcddf0-5233-43ad-9004-9fc7f7a3ffc1",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:33:24.173Z"
+  },
+  {
+    "id": "237cd829-30bb-42a3-9aee-77ec0019c63e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:34:50.170Z"
+  },
+  {
+    "id": "88882d3e-3f48-4a77-9790-bb0f5efc75a7",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:34:58.856Z"
+  },
+  {
+    "id": "0ad47e9f-75da-4fd2-ae98-fc6cd000dd63",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:35:41.007Z"
+  },
+  {
+    "id": "254419c6-8e29-4099-a4af-bac95a92e9f3",
+    "type": "login",
+    "email": "sxtech15@gmail.com",
+    "createdAt": "2026-07-30T06:35:46.297Z"
+  },
+  {
+    "id": "553dbc87-c882-43f8-86d0-c191a19aa938",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:36:20.394Z"
+  },
+  {
+    "id": "ce619be8-7317-49e4-a8ff-9312624d86e6",
+    "type": "login",
+    "email": "jesus.aguilar93328@gmail.com",
+    "createdAt": "2026-07-30T06:36:49.899Z"
+  },
+  {
+    "id": "5b7151d2-4386-4df7-841c-90f637f9acd8",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:36:53.233Z"
+  },
+  {
+    "id": "c29cb286-77f8-45f7-8e7a-cbc8205ef68b",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T06:37:48.913Z"
+  },
+  {
+    "id": "ab6d79e1-3ea6-414c-999e-287a9affe3d4",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T07:12:01.626Z"
+  },
+  {
+    "id": "327d537c-1361-496c-aa98-2927b77beb72",
+    "type": "login",
+    "email": "khanhtran20915@gmail.com",
+    "createdAt": "2026-07-30T07:12:06.638Z"
+  },
+  {
+    "id": "07972727-0e2c-401b-9fc3-d304a47e68ff",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T07:18:59.483Z"
+  },
+  {
+    "id": "d3eb4d5f-cc05-421f-857b-61e65d5261ad",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T07:19:03.886Z"
+  },
+  {
+    "id": "3ee5a686-730c-4074-9ac7-4a2b3917c5cd",
+    "type": "login",
+    "email": "sxtech15@gmail.com",
+    "createdAt": "2026-07-30T07:19:05.365Z"
+  },
+  {
+    "id": "18a5b777-fcc4-4327-95b6-06501117c038",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T07:20:05.102Z"
+  },
+  {
+    "id": "b9491ebc-df49-4a40-8909-46b32e56c680",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T07:20:47.633Z"
+  },
+  {
+    "id": "c307b900-09d4-4f36-8289-06c90ea50efc",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T09:05:16.695Z"
+  },
+  {
+    "id": "ea98c240-e3db-4a0c-a744-adc644af8ff0",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T09:06:06.542Z"
+  },
+  {
+    "id": "c5d67ad3-9a97-4ef1-98c0-4717929f9301",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T09:06:45.688Z"
+  },
+  {
+    "id": "f8208c13-7ed8-4369-8857-c7bfedbcc705",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T09:09:27.736Z"
+  },
+  {
+    "id": "3877dff8-b905-47bf-84c3-bd8531c333bb",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T11:53:39.684Z"
+  },
+  {
+    "id": "879103ac-16f4-4ae2-afef-45fa12d96c27",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T12:33:34.181Z"
+  },
+  {
+    "id": "4530d737-302b-4568-bc48-c50abb94a250",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T12:59:30.483Z"
+  },
+  {
+    "id": "9432ee7d-7299-4f40-9ae0-0675761f843e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T13:05:00.270Z"
+  },
+  {
+    "id": "cc6cc56c-abf5-4833-b10a-0ea9ecb65e05",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T13:07:35.223Z"
+  },
+  {
+    "id": "310e22bf-7575-4185-a9c9-1281fe784ebb",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T13:11:12.590Z"
+  },
+  {
+    "id": "d0c987e7-1b83-48eb-a1c9-1980c637ce00",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T13:40:39.014Z"
+  },
+  {
+    "id": "64ed6199-26c4-427f-b416-ab0d6fb48f30",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T19:53:39.191Z"
+  },
+  {
+    "id": "a48679ad-7a55-4d9d-bd19-d52393cea42d",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:43:16.348Z"
+  },
+  {
+    "id": "13e83f00-255c-4131-b471-3555bd191139",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:44:49.251Z"
+  },
+  {
+    "id": "8c29faa4-fc3d-4966-9572-78e86cf3f0e5",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:46:22.695Z"
+  },
+  {
+    "id": "39ae1880-a0cd-4816-b130-a1988cd3e8e3",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:48:02.735Z"
+  },
+  {
+    "id": "9c85ec84-8368-45d1-ab95-2e4e6ed870fc",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:49:43.187Z"
+  },
+  {
+    "id": "66971403-1cba-4588-a18b-bfe56b1148ce",
+    "type": "login",
+    "email": "khanhtran20915@gmail.com",
+    "createdAt": "2026-07-30T21:49:47.744Z"
+  },
+  {
+    "id": "e9ec68f0-bb6f-4b13-a6fa-f7a308ba763d",
+    "type": "login",
+    "email": "khanhtran20915@gmail.com",
+    "createdAt": "2026-07-30T21:50:42.167Z"
+  },
+  {
+    "id": "61864bc5-9968-4aa1-b5dd-fe6c52e31c25",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:50:43.869Z"
+  },
+  {
+    "id": "ec73fd1f-cd41-4609-bb6d-5ec6009dbaad",
+    "type": "login",
+    "email": "huyhaihoang48@gmail.com",
+    "createdAt": "2026-07-30T21:52:58.410Z"
+  },
+  {
+    "id": "cf90a95b-4e71-4c87-8ceb-a7cbbc563bb2",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T21:53:00.064Z"
+  },
+  {
+    "id": "d0ad6a55-5792-47f7-ae3c-587e85212958",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:44:45.105Z"
+  },
+  {
+    "id": "c3de3184-c49f-45c0-b30e-4e16bc0fc9f0",
+    "type": "login",
+    "email": "huyhaihoang48@gmail.com",
+    "createdAt": "2026-07-30T22:45:04.008Z"
+  },
+  {
+    "id": "776df40e-b6e3-4b11-9b1e-4b0d09f073f1",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:45:16.319Z"
+  },
+  {
+    "id": "53aa76f5-2441-4e77-9ccc-2d1903bfc484",
+    "type": "login",
+    "email": "tuandungvn1211@gmail.com",
+    "createdAt": "2026-07-30T22:46:59.158Z"
+  },
+  {
+    "id": "9cb44d7e-ec17-4f47-ac9a-d37fb431dde3",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:47:00.613Z"
+  },
+  {
+    "id": "f41d045c-d39f-498e-ba1d-3ee0e7385a98",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:47:35.412Z"
+  },
+  {
+    "id": "085a7364-4feb-4fd2-8b94-97358c565596",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:47:52.971Z"
+  },
+  {
+    "id": "7ef24cf9-3966-440f-9806-945e4c96c4c1",
+    "type": "login",
+    "email": "sxtech15@gmail.com",
+    "createdAt": "2026-07-30T22:48:12.952Z"
+  },
+  {
+    "id": "ff0796c2-ad70-4f67-9d28-f423fc4e810e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:48:26.897Z"
+  },
+  {
+    "id": "649541e6-599e-488c-a28e-d48b9e320652",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T22:48:57.448Z"
+  },
+  {
+    "id": "04fcf348-0b90-4784-b428-0a72d53822fa",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T23:05:19.699Z"
+  },
+  {
+    "id": "e5deae72-2d54-4923-add1-6b4fd38e325f",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T23:19:06.668Z"
+  },
+  {
+    "id": "ab894905-0a9a-421e-a013-bb46ebe4d7e5",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T23:40:27.530Z"
+  },
+  {
+    "id": "a1cfecee-1432-4271-8d8e-ba5c51af6f3e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T23:45:25.348Z"
+  },
+  {
+    "id": "f3bdadc9-38e3-4cb0-9b44-eada08204f6e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-30T23:47:45.636Z"
+  },
+  {
+    "id": "39f9bf36-cccf-4951-98ce-0ba5d5a92c5e",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T06:21:45.868Z"
+  },
+  {
+    "id": "59d9a01b-9199-43b5-a5b4-1eea8556132d",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T06:25:21.973Z"
+  },
+  {
+    "id": "c571a285-c0fb-4e94-bea3-83b1f4a65a11",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T06:53:27.527Z"
+  },
+  {
+    "id": "209bf2c9-ed16-44a9-88cb-b51069f9d46b",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T08:40:29.690Z"
+  },
+  {
+    "id": "90307b6a-3802-4601-aa5d-c1dbdddc5615",
+    "type": "login",
+    "email": "khanhtran20915@gmail.com",
+    "createdAt": "2026-07-31T08:41:02.437Z"
+  },
+  {
+    "id": "1211660d-a78c-4988-aee0-210004cbfc65",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T08:41:04.572Z"
+  },
+  {
+    "id": "b7a40918-46c0-45ad-ae60-2885096c7590",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T08:45:11.794Z"
+  },
+  {
+    "id": "1a920a23-0b5b-42fe-9f72-6280b9486be4",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T09:22:45.396Z"
+  },
+  {
+    "id": "102d2c97-2799-4292-947a-93ed43a0cff2",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-07-31T09:23:37.168Z"
+  },
+  {
+    "id": "dd36245f-0bd7-4152-a1cf-f12bf5c658ef",
+    "type": "visit",
+    "email": "",
+    "createdAt": "2026-08-31T14:48:50.333Z"
+  }
+]

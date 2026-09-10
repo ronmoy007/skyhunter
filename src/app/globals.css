@@ -1,0 +1,290 @@
+@import "tailwindcss";
+
+/*
+  SkyHunter design system — clean, light, minimal (sky studio look).
+  A white canvas with a soft sky wash, dark headings, cool hairlines, generous
+  whitespace, and a confident sky-blue brand accent. Sections alternate white
+  and a light cool gray for rhythm.
+*/
+@theme {
+  /* surfaces — white cards on a clean, cool near-white canvas */
+  --color-void: #ffffff;        /* cards + inputs */
+  --color-abyss: #f3f7fb;       /* alternating section band (cool light) */
+  --color-navy: #ffffff;        /* cards */
+  --color-navy-soft: #eef4fa;   /* hover */
+  --color-steel: #e9f1f9;       /* chips */
+  --color-steel-line: #dbe4ef;  /* borders — cool hairline */
+
+  /* text */
+  --color-chrome: #16181d;      /* headings / strong */
+  --color-mist: #3f444c;        /* body */
+  --color-fog: #6b7280;         /* muted */
+  --color-faint: #9aa1ac;       /* faint */
+
+  /* sky-blue brand accent (token names kept as "blue-*") */
+  --color-blue-300: #0369a1;    /* accent text, eyebrows, links */
+  --color-blue-400: #0ea5e9;    /* brand sky, hover */
+  --color-blue-500: #0284c7;    /* primary button */
+  --color-blue-600: #075985;    /* darker */
+  --color-cyan: #0891b2;        /* secondary accent (cyan) */
+
+  --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-brand: var(--font-sora), "Sora", ui-sans-serif, system-ui, sans-serif;
+
+  /* Sharp, minimal corners — override Tailwind's rounded-* scale globally.
+     rounded-full is intentionally left untouched so avatars, dots, and
+     circular icon badges stay round. */
+  --radius-xs: 0.0625rem; /* 1px */
+  --radius-sm: 0.125rem;  /* 2px */
+  --radius-md: 0.125rem;  /* 2px */
+  --radius-lg: 0.125rem;  /* 2px — buttons */
+  --radius-xl: 0.1875rem; /* 3px */
+  --radius-2xl: 0.1875rem;/* 3px — cards */
+  --radius-3xl: 0.25rem;  /* 4px */
+  --radius-card: 0.1875rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Clean white canvas with a soft sky wash up top — a nod to the "Sky" brand.
+     Cards stay white; sections alternate a light cool gray (bg-abyss). */
+  background:
+    radial-gradient(
+      1100px 560px at 72% -14%,
+      rgba(14, 165, 233, 0.07),
+      transparent 60%
+    ),
+    #ffffff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--color-mist);
+  font-family: var(--font-sans);
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(2, 132, 199, 0.16);
+}
+
+/* Hero wash — transparent so the page's blue sky shows through, plus a soft
+   bright haze at the top and a whisper of brand violet. */
+.bg-sky-art {
+  background:
+    radial-gradient(110% 80% at 50% -20%, rgba(14, 165, 233, 0.08), transparent 62%);
+}
+
+/* Two-tone wordmark: dark "Hunter", violet "Sky". */
+.chrome-text {
+  background: linear-gradient(180deg, #2d2f31 0%, #1c1d1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sky-text {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------------------------------------------------------------------------
+   Hero banner — theme-aware. Light theme: a clean sky-wash white so it sits
+   flush with the navbar and the sections below. Dark theme: the full-bleed
+   dark tech banner (coderslab-style). The dot-grid + glow colors flip too.
+   --------------------------------------------------------------------------- */
+.hero-banner {
+  background:
+    radial-gradient(900px 480px at 50% -8%, rgba(14, 165, 233, 0.12), transparent 60%),
+    radial-gradient(680px 460px at 82% 18%, rgba(37, 99, 235, 0.07), transparent 60%),
+    #f4f9fe;
+}
+.hero-grid {
+  background-image: radial-gradient(rgba(20, 44, 84, 0.08) 1px, transparent 1.4px);
+  background-size: 26px 26px;
+  opacity: 0.7;
+}
+:root[data-theme="dark"] .hero-grid {
+  opacity: 0.2;
+}
+:root[data-theme="dark"] .hero-banner {
+  background:
+    radial-gradient(900px 480px at 50% -8%, rgba(56, 189, 248, 0.22), transparent 60%),
+    radial-gradient(680px 460px at 82% 18%, rgba(37, 99, 235, 0.2), transparent 60%),
+    #0a1222;
+}
+:root[data-theme="dark"] .hero-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1.4px);
+}
+
+/* Hero scrim — a left-weighted gradient over the hero background image so the
+   left-aligned copy stays legible. Flips with the theme (light wash / dark
+   wash) to match whichever background image is showing. */
+.hero-scrim {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 249, 254, 0.94) 0%,
+    rgba(244, 249, 254, 0.72) 34%,
+    rgba(244, 249, 254, 0.25) 58%,
+    transparent 78%
+  );
+}
+:root[data-theme="dark"] .hero-scrim {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 14, 26, 0.94) 0%,
+    rgba(9, 14, 26, 0.72) 34%,
+    rgba(9, 14, 26, 0.3) 58%,
+    transparent 80%
+  );
+}
+/* On narrow screens the visual is cropped off; darken evenly so text reads. */
+@media (max-width: 767px) {
+  .hero-scrim {
+    background: rgba(244, 249, 254, 0.86);
+  }
+  :root[data-theme="dark"] .hero-scrim {
+    background: rgba(9, 14, 26, 0.86);
+  }
+}
+
+/* Theme-only visibility — the theme is driven by [data-theme], not
+   prefers-color-scheme, so Tailwind's dark: variant can't gate on it. Use these
+   to show one asset in light mode and its counterpart in dark mode. */
+.theme-dark-only {
+  display: none;
+}
+:root[data-theme="dark"] .theme-dark-only {
+  display: block;
+}
+:root[data-theme="dark"] .theme-light-only {
+  display: none;
+}
+
+/* A hairline of brand color — the one recurring flourish. */
+.streak {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(14, 165, 233, 0.35),
+    transparent
+  );
+}
+
+/* Minimal, neutral card shadow — mostly whitespace, a whisper of depth. */
+.lift {
+  box-shadow:
+    0 1px 2px rgba(16, 24, 40, 0.04),
+    0 12px 30px -18px rgba(16, 24, 40, 0.16);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise-in {
+  animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-in {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ==========================================================================
+   Dark theme
+   The whole design system is token-based, so redefining the color tokens
+   under [data-theme="dark"] flips every utility (bg-navy, text-chrome, …) at
+   once. A tiny inline script in the layout sets data-theme before first paint
+   to avoid a flash; the navbar toggle switches + persists the choice.
+   ========================================================================== */
+:root[data-theme="dark"] {
+  /* surfaces */
+  --color-void: #14181f;        /* cards + inputs */
+  --color-abyss: rgba(18, 24, 34, 0.6); /* glass band (navbar, chat header) */
+  --color-navy: #171b23;        /* cards */
+  --color-navy-soft: #1f2531;   /* hover */
+  --color-steel: #232a36;       /* chips */
+  --color-steel-line: #2f3846;  /* borders */
+
+  /* text */
+  --color-chrome: #f1f4f9;      /* headings / strong */
+  --color-mist: #c5ccd6;        /* body */
+  --color-fog: #8b93a1;         /* muted */
+  --color-faint: #656d7b;       /* faint */
+
+  /* sky-blue brand accent — lightened so it reads on dark surfaces */
+  --color-blue-300: #7dd3fc;    /* accent text, eyebrows, links */
+  --color-blue-400: #38bdf8;    /* hover */
+  --color-blue-500: #0284c7;    /* primary button */
+  --color-blue-600: #0369a1;    /* darker */
+  --color-cyan: #22d3ee;        /* secondary accent (cyan) */
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(
+      1200px 620px at 72% -12%,
+      rgba(14, 165, 233, 0.16),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #0b0f17 0%, #0e1420 45%, #111827 100%);
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] ::selection {
+  background: rgba(56, 189, 248, 0.3);
+}
+
+:root[data-theme="dark"] .bg-sky-art {
+  background:
+    radial-gradient(120% 90% at 50% -25%, rgba(14, 165, 233, 0.12), transparent 60%),
+    radial-gradient(90% 70% at 50% -30%, rgba(56, 189, 248, 0.1), transparent 60%);
+}
+
+/* Wordmark "Hunter" — flip its near-black gradient to light on dark. */
+:root[data-theme="dark"] .chrome-text {
+  background: linear-gradient(180deg, #f8fafc 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+:root[data-theme="dark"] .lift {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 16px 38px -18px rgba(0, 0, 0, 0.75);
+}
+
+/* Chat history wallpaper — a class so it can adapt to the theme (was inline). */
+.chat-wallpaper {
+  background-color: #eaf2fb;
+  background-image:
+    radial-gradient(1000px 500px at 50% -10%, rgba(14, 165, 233, 0.06), transparent 60%),
+    radial-gradient(rgba(90, 130, 175, 0.14) 1px, transparent 1.4px);
+  background-size: auto, 22px 22px;
+}
+:root[data-theme="dark"] .chat-wallpaper {
+  background-color: #0d1119;
+  background-image:
+    radial-gradient(1000px 500px at 50% -10%, rgba(14, 165, 233, 0.1), transparent 60%),
+    radial-gradient(rgba(120, 140, 180, 0.1) 1px, transparent 1.4px);
+}

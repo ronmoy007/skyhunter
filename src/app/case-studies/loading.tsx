@@ -1,0 +1,17 @@
+import { Skeleton } from "@/components/Skeleton";
+
+export default function StoriesLoading() {
+  return (
+    <section className="mx-auto max-w-4xl px-5 py-14">
+      <div className="max-w-2xl">
+        <Skeleton className="h-9 w-56" />
+        <Skeleton className="mt-3 h-4 w-full max-w-md" />
+      </div>
+      <div className="mt-10 space-y-6">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <Skeleton key={i} className="h-40 w-full rounded-2xl" />
+        ))}
+      </div>
+    </section>
+  );
+}
