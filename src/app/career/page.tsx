@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { JobBoard } from "@/components/JobBoard";
-import { listJobs } from "@/lib/jobs-data";
-
-// Static HTML, refreshed at most every 10 min; admin edits bust it via
-// revalidateTag("jobs").
-export const revalidate = 600;
 
 export const metadata: Metadata = {
   title: "Careers · SkyHunter",
@@ -13,9 +7,7 @@ export const metadata: Metadata = {
     "Career opportunities at SkyHunter. Join our team and help build the future of AI development.",
 };
 
-export default async function CareersPage() {
-  const jobs = await listJobs();
-
+export default function CareersPage() {
   return (
     <section className="mx-auto max-w-[1400px] px-5 py-14">
       <div className="flex flex-wrap items-end justify-between gap-6">
@@ -27,27 +19,30 @@ export default async function CareersPage() {
             Join our team
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-mist">
-            We're hiring talented developers, designers, and AI experts to help build the future of AI development. Explore open positions and grow your career with us.
+            We're always looking for talented developers, designers, and AI experts to help build the future of AI development.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
           <Link
-            href="/start"
+            href="/contact"
             className="rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-400"
           >
-            Start a project
-          </Link>
-          <Link
-            href="/book-a-call"
-            className="rounded-lg border border-steel-line px-6 py-3 font-semibold text-chrome transition-colors hover:border-blue-500/60"
-          >
-            Book a call
+            Get in touch
           </Link>
         </div>
       </div>
 
-      <div className="mt-10">
-        <JobBoard jobs={jobs} />
+      <div className="mt-16 rounded-2xl border border-steel-line bg-navy/20 p-12 text-center">
+        <h2 className="text-2xl font-semibold text-chrome">No open positions at the moment</h2>
+        <p className="mt-3 text-mist">
+          We're not currently hiring, but we'd love to hear from you! Reach out and let us know you're interested.
+        </p>
+        <Link
+          href="/contact"
+          className="mt-6 inline-flex rounded-lg border border-blue-500 px-6 py-3 font-semibold text-blue-300 transition-colors hover:bg-blue-500 hover:text-white"
+        >
+          Contact us
+        </Link>
       </div>
     </section>
   );
