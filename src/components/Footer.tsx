@@ -4,8 +4,8 @@ import { Logo } from "./Logo";
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-steel-line/60 bg-abyss">
-      <div className="mx-auto max-w-[1400px] px-5 py-14">
-        <div className="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr]">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 py-12 sm:py-14">
+        <div className="grid gap-8 sm:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr]">
           <div>
             <Logo />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-fog">
@@ -69,8 +69,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="streak mt-12" />
-        <div className="mt-6 flex flex-col items-start justify-between gap-3 text-xs text-faint sm:flex-row sm:items-center">
+        <div className="streak mt-8 sm:mt-12" />
+        <div className="mt-6 flex flex-col items-start justify-between gap-4 text-xs text-faint sm:flex-row sm:items-center sm:gap-3">
           <p>© {2026} SkyHunter — a product &amp; AI studio.</p>
           <p className="flex items-center gap-4">
             <a
