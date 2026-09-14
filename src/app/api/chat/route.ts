@@ -33,14 +33,17 @@ export async function POST(req: NextRequest) {
     }
 
     if (!process.env.ANTHROPIC_API_KEY) {
+      console.error("ANTHROPIC_API_KEY is not set");
       return NextResponse.json(
         { error: "API key not configured" },
         { status: 500 }
       );
     }
 
+    console.log("Calling Claude API with", messages.length, "messages");
+
     const response = await client.messages.create({
-      model: "claude-3-5-sonnet-20241022",
+      model: "claude-opus-5",
       max_tokens: 1024,
       system: SYSTEM_PROMPT,
       messages: messages.map((msg: any) => ({
@@ -52,6 +55,8 @@ export async function POST(req: NextRequest) {
     const assistantMessage =
       response.content[0].type === "text" ? response.content[0].text : "";
 
+    console.log("Claude API response received successfully");
+
     return NextResponse.json({
       message: assistantMessage,
       usage: {
@@ -60,9 +65,12 @@ export async function POST(req: NextRequest) {
       },
     });
   } catch (error) {
-    console.error("Chat API error:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error("Chat API error:", errorMessage);
+    console.error("Full error:", error);
+
     return NextResponse.json(
-      { error: "Failed to process chat message" },
+      { error: `Failed to process chat message: ${errorMessage}` },
       { status: 500 }
     );
   }
