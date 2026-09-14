@@ -193,9 +193,9 @@ export function AIAssistant() {
             {messages.length === 0 && (
               <div className="flex items-center justify-center h-full text-center px-2">
                 <div className="space-y-6">
-                  <div className="ai-chat-welcome">
-                    <p className="font-bold text-2xl mb-3">Welcome to SkyHunter AI</p>
-                    <p className="text-sm max-w-sm leading-relaxed mx-auto opacity-75">
+                  <div>
+                    <p className="font-bold text-2xl mb-3 text-gray-900 dark:text-white">Welcome to SkyHunter AI</p>
+                    <p className="text-sm max-w-sm leading-relaxed mx-auto text-gray-700 dark:text-gray-300">
                       Hi! I'm your AI assistant. Ask me anything about our services, portfolio, pricing, or how we can help with your next project.
                     </p>
                   </div>
