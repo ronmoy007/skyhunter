@@ -13,7 +13,8 @@
       "Bash(git commit -m 'Upgrade AI chatbot UI with modern design, better error handling, and improved UX *)",
       "Bash(git commit -m 'Update Claude model to opus-5 for API compatibility *)",
       "Bash(git commit -m 'Polish AI chatbot UI with better styling, scrollbar, and typography *)",
-      "Bash(git commit -m 'Remove export chat button and upgrade welcome screen *)"
+      "Bash(git commit -m 'Remove export chat button and upgrade welcome screen *)",
+      "Bash(git commit -m 'Add detailed error logging for API debugging *)"
     ]
   }
 }

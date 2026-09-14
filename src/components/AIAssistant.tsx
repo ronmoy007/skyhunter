@@ -54,6 +54,8 @@ export function AIAssistant() {
     setLoading(true);
 
     try {
+      console.log("Sending message. Total messages:", updatedMessages.length);
+
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -65,10 +67,14 @@ export function AIAssistant() {
         }),
       });
 
+      console.log("API response status:", response.status);
+
       const data = await response.json();
+      console.log("API response data:", data);
 
       if (!response.ok || data.error) {
-        throw new Error(data.error || "Failed to get response");
+        const errorMsg = data.error || `HTTP ${response.status}: Failed to get response`;
+        throw new Error(errorMsg);
       }
 
       if (data.message) {
@@ -81,11 +87,13 @@ export function AIAssistant() {
         const finalMessages = [...updatedMessages, assistantMessage];
         setMessages(finalMessages);
         saveChatHistory(finalMessages);
+      } else {
+        throw new Error("No response message received from API");
       }
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : "Failed to send message";
       setError(errorMsg);
-      console.error("Error:", err);
+      console.error("Full error:", err);
     } finally {
       setLoading(false);
     }
