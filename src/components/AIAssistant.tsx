@@ -194,22 +194,22 @@ export function AIAssistant() {
               <div className="flex items-center justify-center h-full text-center px-2">
                 <div className="space-y-6">
                   <div>
-                    <p className="font-bold text-2xl mb-3 text-gray-900 dark:text-white">Welcome to SkyHunter AI</p>
-                    <p className="text-sm max-w-sm leading-relaxed mx-auto text-gray-700 dark:text-gray-300">
+                    <p className="font-bold text-2xl mb-3" style={{ color: '#1f2937' }}>Welcome to SkyHunter AI</p>
+                    <p className="text-sm max-w-sm leading-relaxed mx-auto" style={{ color: '#374151' }}>
                       Hi! I'm your AI assistant. Ask me anything about our services, portfolio, pricing, or how we can help with your next project.
                     </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 max-w-xs mx-auto text-xs">
-                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 border border-blue-300 dark:from-blue-900/50 dark:to-blue-900/30 dark:border-blue-700 font-medium" style={{ color: '#1f2937' }}>
                       💡 Ask about our services
                     </div>
-                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 border border-blue-300 dark:from-blue-900/50 dark:to-blue-900/30 dark:border-blue-700 font-medium" style={{ color: '#1f2937' }}>
                       🎯 Our portfolio & case studies
                     </div>
-                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 border border-blue-300 dark:from-blue-900/50 dark:to-blue-900/30 dark:border-blue-700 font-medium" style={{ color: '#1f2937' }}>
                       💰 Pricing & timelines
                     </div>
-                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 border border-blue-300 dark:from-blue-900/50 dark:to-blue-900/30 dark:border-blue-700 font-medium" style={{ color: '#1f2937' }}>
                       🚀 Get started today
                     </div>
                   </div>
