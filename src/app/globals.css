@@ -381,3 +381,31 @@ body {
 :root[data-theme="dark"] .ai-chat-welcome {
   color: #f1f4f9;
 }
+
+/* Welcome text colors for light/dark themes */
+.welcome-title {
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+:root[data-theme="dark"] .welcome-title {
+  color: #f1f4f9;
+}
+
+.welcome-text {
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+:root[data-theme="dark"] .welcome-text {
+  color: #d1d5db;
+}
+
+.suggestion-box {
+  color: #1f2937;
+}
+
+:root[data-theme="dark"] .suggestion-box {
+  color: #f1f4f9;
+}
