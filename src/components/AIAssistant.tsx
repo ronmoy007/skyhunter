@@ -200,16 +200,16 @@ export function AIAssistant() {
                     </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 max-w-xs mx-auto text-xs">
-                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
                       💡 Ask about our services
                     </div>
-                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
                       🎯 Our portfolio & case studies
                     </div>
-                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
                       💰 Pricing & timelines
                     </div>
-                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 text-gray-700 border border-blue-200 dark:from-blue-900/40 dark:to-blue-900/20 dark:text-gray-300 dark:border-blue-800 font-medium">
                       🚀 Get started today
                     </div>
                   </div>
