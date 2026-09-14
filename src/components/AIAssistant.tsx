@@ -152,7 +152,7 @@ export function AIAssistant() {
 
       {/* Chat Widget */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 max-w-[calc(100vw-1.5rem)] h-[600px] max-h-[80vh] rounded-3xl shadow-2xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 flex flex-col z-40 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
+        <div className="fixed bottom-24 right-6 w-96 max-w-[calc(100vw-1.5rem)] h-[600px] max-h-[80vh] rounded-3xl shadow-2xl bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-700 flex flex-col z-40 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
           {/* Header - Gradient Background */}
           <div className="flex items-center justify-between p-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-t-3xl">
             <div className="flex items-center gap-3">
@@ -189,7 +189,7 @@ export function AIAssistant() {
           </div>
 
           {/* Messages Container */}
-          <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-gradient-to-b from-gray-50 to-white dark:from-slate-800 dark:to-slate-900 scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-transparent hover:scrollbar-thumb-blue-500">
+          <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-slate-800 dark:via-slate-800 dark:to-slate-900 scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-transparent hover:scrollbar-thumb-blue-500">
             {messages.length === 0 && (
               <div className="flex items-center justify-center h-full text-center px-2">
                 <div className="space-y-6">
@@ -300,7 +300,7 @@ export function AIAssistant() {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 rounded-b-3xl">
+          <div className="border-t border-gray-100 dark:border-slate-700 p-4 bg-gradient-to-b from-blue-50/50 to-white dark:from-slate-800 dark:to-slate-900 rounded-b-3xl">
             <div className="flex gap-2.5">
               <input
                 type="text"
