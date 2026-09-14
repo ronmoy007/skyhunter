@@ -52,8 +52,28 @@ export async function POST(req: NextRequest) {
       })),
     });
 
-    const assistantMessage =
-      response.content[0].type === "text" ? response.content[0].text : "";
+    console.log("Claude API response:", JSON.stringify(response, null, 2));
+
+    if (!response.content || response.content.length === 0) {
+      console.error("No content in response");
+      return NextResponse.json(
+        { error: "Claude API returned no content" },
+        { status: 500 }
+      );
+    }
+
+    const assistantMessage = response.content
+      .filter((block: any) => block.type === "text")
+      .map((block: any) => block.text)
+      .join("");
+
+    if (!assistantMessage) {
+      console.error("No text content found in response:", response.content);
+      return NextResponse.json(
+        { error: "Claude API returned no text response" },
+        { status: 500 }
+      );
+    }
 
     console.log("Claude API response received successfully");
 
