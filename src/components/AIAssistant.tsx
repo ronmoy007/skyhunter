@@ -152,7 +152,7 @@ export function AIAssistant() {
 
       {/* Chat Widget */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 max-w-[calc(100vw-1.5rem)] h-[600px] max-h-[80vh] rounded-3xl shadow-2xl bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-700 flex flex-col z-40 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
+        <div className="ai-chat-widget fixed bottom-24 right-6 w-96 max-w-[calc(100vw-1.5rem)] h-[600px] max-h-[80vh] rounded-3xl shadow-2xl border flex flex-col z-40 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
           {/* Header - Gradient Background */}
           <div className="flex items-center justify-between p-4 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-t-3xl">
             <div className="flex items-center gap-3">
@@ -189,27 +189,27 @@ export function AIAssistant() {
           </div>
 
           {/* Messages Container */}
-          <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-slate-800 dark:via-slate-800 dark:to-slate-900 scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-transparent hover:scrollbar-thumb-blue-500">
+          <div className="ai-chat-messages flex-1 overflow-y-auto p-5 space-y-4 scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-transparent hover:scrollbar-thumb-blue-500">
             {messages.length === 0 && (
               <div className="flex items-center justify-center h-full text-center px-2">
                 <div className="space-y-6">
-                  <div>
-                    <p className="font-bold text-gray-900 dark:text-white text-2xl mb-3">Welcome to SkyHunter AI</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 max-w-sm leading-relaxed mx-auto">
+                  <div className="ai-chat-welcome">
+                    <p className="font-bold text-2xl mb-3">Welcome to SkyHunter AI</p>
+                    <p className="text-sm max-w-sm leading-relaxed mx-auto opacity-75">
                       Hi! I'm your AI assistant. Ask me anything about our services, portfolio, pricing, or how we can help with your next project.
                     </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 max-w-xs mx-auto text-xs">
-                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
                       💡 Ask about our services
                     </div>
-                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
                       🎯 Our portfolio & case studies
                     </div>
-                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
                       💰 Pricing & timelines
                     </div>
-                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                    <div className="p-2 rounded-lg bg-blue-50 text-gray-700 dark:text-gray-300 dark:bg-blue-900/20">
                       🚀 Get started today
                     </div>
                   </div>
@@ -237,10 +237,10 @@ export function AIAssistant() {
                   </div>
                 )}
                 <div
-                  className={`max-w-xs lg:max-w-sm rounded-3xl px-5 py-3.5 ${
+                  className={`max-w-xs lg:max-w-sm rounded-3xl px-5 py-3.5 shadow-sm ${
                     message.role === "user"
-                      ? "bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-tr-none shadow-md"
-                      : "bg-white dark:bg-slate-700 text-gray-800 dark:text-gray-100 rounded-tl-none shadow-sm border border-gray-100 dark:border-slate-600"
+                      ? "ai-chat-message-user rounded-tr-none shadow-md"
+                      : "ai-chat-message-assistant rounded-tl-none border"
                   }`}
                 >
                   <p className="text-sm leading-relaxed whitespace-pre-wrap break-words font-medium">
@@ -300,7 +300,7 @@ export function AIAssistant() {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-100 dark:border-slate-700 p-4 bg-gradient-to-b from-blue-50/50 to-white dark:from-slate-800 dark:to-slate-900 rounded-b-3xl">
+          <div className="ai-chat-footer border-t p-4 rounded-b-3xl">
             <div className="flex gap-2.5">
               <input
                 type="text"
@@ -313,7 +313,7 @@ export function AIAssistant() {
                   }
                 }}
                 placeholder="Ask anything..."
-                className="flex-1 px-5 py-3 rounded-full border-2 border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 focus:ring-2 focus:ring-blue-500/10 text-sm transition-all font-medium"
+                className="ai-chat-input flex-1 px-5 py-3 rounded-full border-2 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 text-sm transition-all font-medium"
                 disabled={loading}
               />
               <button

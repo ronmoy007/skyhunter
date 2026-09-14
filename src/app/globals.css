@@ -288,3 +288,96 @@ body {
     radial-gradient(1000px 500px at 50% -10%, rgba(14, 165, 233, 0.1), transparent 60%),
     radial-gradient(rgba(120, 140, 180, 0.1) 1px, transparent 1.4px);
 }
+
+/* ============================================================================
+   AI Assistant Chatbot — Theme Support
+   Switches between light and dark modes based on [data-theme] attribute
+   ============================================================================ */
+
+/* Light theme (default) */
+.ai-chat-widget {
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.ai-chat-header {
+  background: linear-gradient(to right, #0284c7, #0369a1);
+}
+
+.ai-chat-messages {
+  background: linear-gradient(to bottom, #ffffff, rgba(59, 130, 246, 0.05));
+}
+
+.ai-chat-message-assistant {
+  background-color: #ffffff;
+  color: #1f2937;
+  border-color: #f3f4f6;
+}
+
+.ai-chat-message-user {
+  background: linear-gradient(to right, #0284c7, #0369a1);
+  color: #ffffff;
+}
+
+.ai-chat-input {
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  color: #111827;
+}
+
+.ai-chat-input::placeholder {
+  color: #9ca3af;
+}
+
+.ai-chat-footer {
+  background: linear-gradient(to bottom, rgba(59, 130, 246, 0.05), #ffffff);
+  border-color: #e5e7eb;
+}
+
+.ai-chat-welcome {
+  color: #111827;
+}
+
+/* Dark theme */
+:root[data-theme="dark"] .ai-chat-widget {
+  background-color: #14181f;
+  border-color: #2f3846;
+}
+
+:root[data-theme="dark"] .ai-chat-header {
+  background: linear-gradient(to right, #0284c7, #0369a1);
+}
+
+:root[data-theme="dark"] .ai-chat-messages {
+  background: linear-gradient(to bottom, #14181f, rgba(14, 165, 233, 0.08));
+}
+
+:root[data-theme="dark"] .ai-chat-message-assistant {
+  background-color: #1f2531;
+  color: #c5ccd6;
+  border-color: #2f3846;
+}
+
+:root[data-theme="dark"] .ai-chat-message-user {
+  background: linear-gradient(to right, #0284c7, #0369a1);
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .ai-chat-input {
+  background-color: #232a36;
+  border-color: #2f3846;
+  color: #f1f4f9;
+}
+
+:root[data-theme="dark"] .ai-chat-input::placeholder {
+  color: #8b93a1;
+}
+
+:root[data-theme="dark"] .ai-chat-footer {
+  background: linear-gradient(to bottom, rgba(14, 165, 233, 0.08), #14181f);
+  border-color: #2f3846;
+}
+
+:root[data-theme="dark"] .ai-chat-welcome {
+  color: #f1f4f9;
+}
