@@ -184,15 +184,26 @@ export function AIAssistant() {
           <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-gradient-to-b from-gray-50 to-white dark:from-slate-800 dark:to-slate-900 scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-transparent hover:scrollbar-thumb-blue-500">
             {messages.length === 0 && (
               <div className="flex items-center justify-center h-full text-center px-2">
-                <div className="space-y-5">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900 dark:to-blue-800 flex items-center justify-center mx-auto shadow-md">
-                    <span className="text-5xl">🤖</span>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="font-bold text-gray-900 dark:text-white text-xl">Welcome to SkyHunter AI!</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 max-w-sm leading-relaxed">
-                      I'm here to answer your questions about our services, portfolio, pricing, and how we can help bring your project to life.
+                <div className="space-y-6">
+                  <div>
+                    <p className="font-bold text-gray-900 dark:text-white text-2xl mb-3">Welcome to SkyHunter AI</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 max-w-sm leading-relaxed mx-auto">
+                      Hi! I'm your AI assistant. Ask me anything about our services, portfolio, pricing, or how we can help with your next project.
                     </p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 max-w-xs mx-auto text-xs">
+                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                      💡 Ask about our services
+                    </div>
+                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                      🎯 Our portfolio & case studies
+                    </div>
+                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                      💰 Pricing & timelines
+                    </div>
+                    <div className="p-2 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300">
+                      🚀 Get started today
+                    </div>
                   </div>
                 </div>
               </div>
@@ -281,16 +292,7 @@ export function AIAssistant() {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 rounded-b-3xl space-y-3">
-            {messages.length > 0 && (
-              <button
-                onClick={handleExport}
-                className="w-full text-sm text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 py-2 transition-colors font-medium"
-              >
-                ⬇️ Export Chat
-              </button>
-            )}
-
+          <div className="border-t border-gray-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 rounded-b-3xl">
             <div className="flex gap-2.5">
               <input
                 type="text"
@@ -316,7 +318,7 @@ export function AIAssistant() {
                 </svg>
               </button>
             </div>
-          </div>
+            </div>
         </div>
       )}
     </>
