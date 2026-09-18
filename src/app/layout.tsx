@@ -116,6 +116,9 @@ export default function RootLayout({
                 logo: `${SITE_URL}/logo.png`,
                 description: SITE_DESCRIPTION,
                 slogan: SITE_TAGLINE,
+                sameAs: [
+                  "https://www.linkedin.com/company/skyhunterlab/",
+                ],
               },
               {
                 "@context": "https://schema.org",
