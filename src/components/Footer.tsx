@@ -79,6 +79,14 @@ export function Footer() {
             >
               support@skyhunterlab.online
             </a>
+            <a
+              href="https://www.linkedin.com/company/skyhunterlab/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-fog transition-colors hover:text-blue-300"
+            >
+              LinkedIn
+            </a>
             <Link
               href="/signin"
               className="text-faint transition-colors hover:text-fog"
