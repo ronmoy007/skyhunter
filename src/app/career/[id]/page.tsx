@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getJobById, listJobs } from "@/lib/jobs-data";
+import { isJobOpen } from "@/lib/jobs";
+import { ApplyButton } from "@/components/ApplyButton";
 import { SITE_URL } from "@/lib/site";
 
 // Public, statically generated case-study pages — best for SEO (crawlable rich
@@ -65,10 +67,10 @@ export default async function JobDetailPage({
       />
     <article className="mx-auto max-w-3xl px-5 py-14">
       <Link
-        href="/work"
+        href="/career"
         className="text-sm font-medium text-fog transition-colors hover:text-blue-300"
       >
-        ← Back to our work
+        ← Back to careers
       </Link>
 
       <header className="mt-6">
@@ -138,30 +140,44 @@ export default async function JobDetailPage({
         <p className="mt-2 leading-relaxed text-chrome">{job.broughtFrom}</p>
       </div>
 
-      {/* CTA — invite the visitor to commission a similar build */}
-      <div className="lift mt-10 rounded-2xl border border-steel-line bg-navy px-6 py-10 text-center">
-        <h2 className="font-display text-2xl font-semibold tracking-tight text-chrome">
-          Want something like this?
-        </h2>
-        <p className="mx-auto mt-2 max-w-md text-sm text-mist">
-          Tell us what you&apos;re building and we&apos;ll scope it — most
-          projects start within a week.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link
-            href="/start"
-            className="rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-400"
-          >
-            Start a project like this →
-          </Link>
-          <Link
-            href="/book-a-call"
-            className="rounded-lg border border-steel-line px-6 py-3 font-semibold text-chrome transition-colors hover:border-blue-500/60"
-          >
-            Book a call
-          </Link>
+      {/* CTA — Apply for career position or pitch for a project */}
+      {isJobOpen(job.status) ? (
+        <div className="lift mt-10 rounded-2xl border border-blue-500/30 bg-blue-500/5 px-6 py-10 text-center">
+          <h2 className="font-display text-2xl font-semibold tracking-tight text-chrome">
+            Ready to join the team?
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-sm text-mist">
+            Tell us about your experience and why you&apos;re excited about this role.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <ApplyButton jobId={job.id} jobTitle={job.title} />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="lift mt-10 rounded-2xl border border-steel-line bg-navy px-6 py-10 text-center">
+          <h2 className="font-display text-2xl font-semibold tracking-tight text-chrome">
+            Want something like this?
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-sm text-mist">
+            Tell us what you&apos;re building and we&apos;ll scope it — most
+            projects start within a week.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/start"
+              className="rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-400"
+            >
+              Start a project like this →
+            </Link>
+            <Link
+              href="/book-a-call"
+              className="rounded-lg border border-steel-line px-6 py-3 font-semibold text-chrome transition-colors hover:border-blue-500/60"
+            >
+              Book a call
+            </Link>
+          </div>
+        </div>
+      )}
     </article>
     </>
   );
