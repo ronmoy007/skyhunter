@@ -22,6 +22,11 @@ export function ApplyButton({
   const [open, setOpen] = useState(false);
   const [error, setError] = useState("");
 
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState(user?.email || "");
+  const [address, setAddress] = useState("");
+  const [linkedinUrl, setLinkedinUrl] = useState("");
+  const [expectedSalary, setExpectedSalary] = useState("");
   const [note, setNote] = useState("");
   const [phone, setPhone] = useState("");
   const [link, setLink] = useState("");
@@ -102,7 +107,17 @@ export function ApplyButton({
       const res = await fetch("/api/apply", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId, note, phone, link }),
+        body: JSON.stringify({
+          jobId,
+          fullName,
+          email,
+          address,
+          linkedinUrl,
+          expectedSalary,
+          note,
+          phone,
+          link
+        }),
       });
       const json = await res.json();
       if (!res.ok || !json.ok) throw new Error(json.error || "Couldn't submit.");
@@ -176,6 +191,137 @@ export function ApplyButton({
             </div>
 
             <form onSubmit={submit} className="space-y-6">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="apply-fullname"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    id="apply-fullname"
+                    type="text"
+                    required
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    className={inputCls}
+                    placeholder="John Doe"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="apply-email"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="apply-email"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className={inputCls}
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="apply-phone"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Phone <span className="font-normal text-fog">(optional)</span>
+                  </label>
+                  <input
+                    id="apply-phone"
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className={inputCls}
+                    placeholder="+1 (555) 123-4567"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="apply-salary"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Expected Monthly Salary{" "}
+                    <span className="font-normal text-fog">(optional)</span>
+                  </label>
+                  <input
+                    id="apply-salary"
+                    type="number"
+                    value={expectedSalary}
+                    onChange={(e) => setExpectedSalary(e.target.value)}
+                    className={inputCls}
+                    placeholder="5000"
+                    min="0"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="apply-address"
+                  className="mb-2 block text-sm font-semibold text-chrome"
+                >
+                  Address <span className="font-normal text-fog">(optional)</span>
+                </label>
+                <textarea
+                  id="apply-address"
+                  rows={2}
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
+                  className={inputCls}
+                  placeholder="Street address, city, state, country, postal code"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="apply-linkedin"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    LinkedIn URL{" "}
+                    <span className="font-normal text-fog">(optional)</span>
+                  </label>
+                  <input
+                    id="apply-linkedin"
+                    type="url"
+                    value={linkedinUrl}
+                    onChange={(e) => setLinkedinUrl(e.target.value)}
+                    className={inputCls}
+                    placeholder="https://linkedin.com/in/yourprofile"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="apply-link"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Portfolio / Website{" "}
+                    <span className="font-normal text-fog">(optional)</span>
+                  </label>
+                  <input
+                    id="apply-link"
+                    type="url"
+                    value={link}
+                    onChange={(e) => setLink(e.target.value)}
+                    className={inputCls}
+                    placeholder="https://yourportfolio.com"
+                  />
+                </div>
+              </div>
+
               <div>
                 <label
                   htmlFor="apply-note"
@@ -195,43 +341,6 @@ export function ApplyButton({
                   className={inputCls}
                   placeholder="Share your professional background, achievements, and what drew you to this opportunity..."
                 />
-              </div>
-
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                <div>
-                  <label
-                    htmlFor="apply-link"
-                    className="mb-2 block text-sm font-semibold text-chrome"
-                  >
-                    Portfolio or LinkedIn{" "}
-                    <span className="font-normal text-fog">(optional)</span>
-                  </label>
-                  <input
-                    id="apply-link"
-                    type="url"
-                    value={link}
-                    onChange={(e) => setLink(e.target.value)}
-                    className={inputCls}
-                    placeholder="https://linkedin.com/in/yourprofile"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="apply-phone"
-                    className="mb-2 block text-sm font-semibold text-chrome"
-                  >
-                    Phone <span className="font-normal text-fog">(optional)</span>
-                  </label>
-                  <input
-                    id="apply-phone"
-                    type="tel"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    className={inputCls}
-                    placeholder="+1 (555) 123-4567"
-                  />
-                </div>
               </div>
 
               {error && (
