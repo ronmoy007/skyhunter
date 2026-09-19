@@ -68,7 +68,7 @@ export function ApplyButton({
         aria-hidden="true"
         className="inline-block rounded-lg bg-blue-500/60 px-8 py-3.5 font-semibold text-white/80"
       >
-        Pitch for this project
+        Apply Now
       </span>
     );
   }
@@ -80,7 +80,7 @@ export function ApplyButton({
         href={`/signup?role=${encodeURIComponent(jobTitle)}`}
         className="inline-block rounded-lg bg-blue-500 px-7 py-3.5 font-semibold text-white transition-colors hover:bg-blue-400"
       >
-        Sign up to pitch
+        Sign up to apply
       </Link>
     );
   }
@@ -131,30 +131,30 @@ export function ApplyButton({
   if (applied) {
     return (
       <div className="flex flex-wrap items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-2 rounded-lg bg-cyan/10 px-6 py-3.5 font-semibold text-cyan ring-1 ring-cyan/30">
-          <Check className="h-5 w-5" /> Pitched
+        <span className="inline-flex items-center gap-2 rounded-lg bg-green-500/15 px-6 py-3.5 font-semibold text-green-500 ring-1 ring-green-500/30">
+          <Check className="h-5 w-5" /> Application submitted
         </span>
         <button
           onClick={withdraw}
           disabled={busy}
           className="rounded-lg border border-steel-line px-5 py-3.5 text-sm font-medium text-mist transition-colors hover:text-chrome disabled:opacity-60"
         >
-          Withdraw
+          Withdraw application
         </button>
       </div>
     );
   }
 
   const inputCls =
-    "w-full rounded-lg border border-steel-line bg-void px-3.5 py-2.5 text-sm text-chrome outline-none transition-colors placeholder:text-faint focus:border-blue-500 focus:ring-1 focus:ring-blue-500";
+    "w-full rounded-lg border border-steel-line bg-void px-4 py-3 text-sm text-chrome outline-none transition-colors placeholder:text-faint focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20";
 
   return (
     <>
       <button
         onClick={() => setOpen(true)}
-        className="rounded-lg bg-blue-500 px-8 py-3.5 font-semibold text-white transition-colors hover:bg-blue-400"
+        className="rounded-lg bg-blue-500 px-8 py-3.5 font-semibold text-white transition-colors hover:bg-blue-400 active:bg-blue-600"
       >
-        Pitch for this project
+        Apply Now
       </button>
 
       {open && (
@@ -164,88 +164,98 @@ export function ApplyButton({
             onClick={() => setOpen(false)}
             aria-hidden="true"
           />
-          <div className="lift relative w-full max-w-md rounded-2xl border border-steel-line bg-void p-6 text-left">
-            <h3 className="font-display text-xl font-semibold text-chrome">
-              Pitch for {jobTitle}
-            </h3>
-            <p className="mt-1 text-sm text-fog">
-              A few details help the client size you up. Pitching as{" "}
-              <span className="font-medium text-mist">{user?.email}</span>.
-            </p>
+          <div className="lift relative w-full max-w-2xl rounded-2xl border border-steel-line bg-void p-8 text-left shadow-2xl">
+            <div className="mb-8">
+              <h2 className="font-display text-2xl font-semibold text-chrome">
+                Apply for {jobTitle}
+              </h2>
+              <p className="mt-2 text-base text-mist">
+                Tell us about your experience and why you're interested in this role. We're reviewing this as{" "}
+                <span className="font-medium text-blue-300">{user?.email}</span>.
+              </p>
+            </div>
 
-            <form onSubmit={submit} className="mt-5 space-y-4">
+            <form onSubmit={submit} className="space-y-6">
               <div>
                 <label
                   htmlFor="apply-note"
-                  className="mb-1.5 block text-sm font-medium text-mist"
+                  className="mb-2 block text-sm font-semibold text-chrome"
                 >
-                  Your pitch
+                  Cover Letter / Background
                 </label>
+                <p className="mb-3 text-xs text-fog">
+                  Tell us about your relevant experience, key skills, and why this role excites you.
+                </p>
                 <textarea
                   id="apply-note"
                   required
-                  rows={4}
+                  rows={5}
                   value={note}
                   onChange={(e) => setNote(e.target.value)}
                   className={inputCls}
-                  placeholder="How you'd approach this build, your relevant stack, and similar agents you've shipped…"
+                  placeholder="Share your professional background, achievements, and what drew you to this opportunity..."
                 />
               </div>
-              <div>
-                <label
-                  htmlFor="apply-link"
-                  className="mb-1.5 block text-sm font-medium text-mist"
-                >
-                  Portfolio / past work link{" "}
-                  <span className="text-faint">(optional)</span>
-                </label>
-                <input
-                  id="apply-link"
-                  type="url"
-                  value={link}
-                  onChange={(e) => setLink(e.target.value)}
-                  className={inputCls}
-                  placeholder="https://…"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="apply-phone"
-                  className="mb-1.5 block text-sm font-medium text-mist"
-                >
-                  Phone <span className="text-faint">(optional)</span>
-                </label>
-                <input
-                  id="apply-phone"
-                  type="tel"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className={inputCls}
-                  placeholder="+1 555 123 4567"
-                />
+
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="apply-link"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Portfolio or LinkedIn{" "}
+                    <span className="font-normal text-fog">(optional)</span>
+                  </label>
+                  <input
+                    id="apply-link"
+                    type="url"
+                    value={link}
+                    onChange={(e) => setLink(e.target.value)}
+                    className={inputCls}
+                    placeholder="https://linkedin.com/in/yourprofile"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="apply-phone"
+                    className="mb-2 block text-sm font-semibold text-chrome"
+                  >
+                    Phone <span className="font-normal text-fog">(optional)</span>
+                  </label>
+                  <input
+                    id="apply-phone"
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className={inputCls}
+                    placeholder="+1 (555) 123-4567"
+                  />
+                </div>
               </div>
 
               {error && (
-                <p className="rounded-lg border border-red-300 bg-red-50 px-4 py-2.5 text-sm text-red-700">
-                  {error}
-                </p>
+                <div className="rounded-lg border border-red-300/50 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+                  <p className="font-medium">Error submitting application</p>
+                  <p className="mt-1 text-xs">{error}</p>
+                </div>
               )}
 
-              <div className="flex items-center justify-end gap-2 pt-1">
+              <div className="flex flex-col-reverse gap-3 border-t border-steel-line pt-6 sm:flex-row sm:justify-end">
                 <button
                   type="button"
                   onClick={() => setOpen(false)}
-                  className="rounded-lg border border-steel-line px-4 py-2.5 text-sm font-medium text-mist transition-colors hover:text-chrome"
+                  className="rounded-lg border border-steel-line px-5 py-3 text-sm font-semibold text-mist transition-colors hover:border-steel-line hover:bg-void/50 hover:text-chrome"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={busy}
-                  className="inline-flex min-w-[9rem] items-center justify-center gap-2 rounded-lg bg-blue-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-400 disabled:opacity-60"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-400 active:bg-blue-600 disabled:opacity-60"
                 >
                   {busy && <Spinner className="h-4 w-4" />}
-                  {busy ? "Submitting…" : "Submit pitch"}
+                  {busy ? "Submitting application…" : "Submit application"}
                 </button>
               </div>
             </form>
