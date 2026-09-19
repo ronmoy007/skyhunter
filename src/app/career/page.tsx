@@ -8,7 +8,7 @@ export const revalidate = 600;
 export const metadata: Metadata = {
   title: "Careers · SkyHunter",
   description:
-    "Join SkyHunter's team. We're hiring for HR and CoFounder roles to help us build AI-powered products and transform the industry.",
+    "Join SkyHunter's team. We're hiring for Recruiter and CoFounder roles to help us build AI-powered products and transform the industry.",
 };
 
 export default async function CareersPage() {
