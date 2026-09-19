@@ -29,7 +29,7 @@ Our Values:
 Careers & Hiring:
 SkyHunter is actively hiring for the following roles:
 1. CoFounder (Full-time, Remote) - Drive business development and close enterprise clients seeking AI solutions. Lead go-to-market strategy, partnership building, and establish SkyHunter as the leading AI studio. Equity + salary. Perfect for experienced enterprise sales leaders with strong networks.
-2. Recruiter (Full-time, Remote, $55k-$75k/year) - Own the full hiring cycle and build our team of exceptional engineers and designers. Source top technical talent, screen for depth, manage interviews, and close offers. You directly shape SkyHunter's culture and team.
+2. Recruiter - Women Only (Full-time, Remote, $55k-$75k/year) - We are actively seeking an experienced woman technical recruiter to own the full hiring cycle and build our team of exceptional engineers and designers. Source top technical talent, screen for depth, manage interviews, and close offers. You directly shape SkyHunter's culture and team. Must be based anywhere in the world and be a woman.
 3. Agent Build Partner (Part-time, Remote, $2.5k-$6k/project) - Ship production AI agents and LLM applications for real clients. Well-scoped projects, no scope creep, flexible schedule. 2-6 weeks per project. Perfect for experienced AI builders who want quality work without long-term commitment.
 
 Visit /career to see full details about all open positions, detailed responsibilities, and how to apply. Candidates can apply directly from the job detail pages.
