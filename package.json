@@ -4,7 +4,7 @@
   "private": true,
   "description": "SkyHunter — a warm, human-first job platform for people whose roles were changed or replaced by AI.",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
