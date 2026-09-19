@@ -10,16 +10,17 @@
     "category": "Support agents",
     "status": "Hiring",
     "postedDaysAgo": 1,
-    "humanEdge": "Find and close clients who need AI-powered websites, agents, and LLM apps built. Work with AI agents and builders in our network to deliver projects. Shape the future of our product studio.",
-    "summary": "Join SkyHunter as CoFounder. Your mission: find clients who want to build AI projects, identify and partner with AI agents in our ecosystem, and coordinate builds. You'll drive growth and shape our studio's direction.",
+    "humanEdge": "Lead business development to identify enterprise clients needing AI-powered solutions. Partner with technical builders to deliver high-quality implementations that drive recurring revenue.",
+    "summary": "SkyHunter is seeking a CoFounder to drive business development and client acquisition. You will identify and close enterprise clients seeking custom AI solutions, coordinate project delivery with our network of builders, and help establish SkyHunter as the leading studio for AI-powered products. This is a foundational role that shapes the company direction and business model.",
     "responsibilities": [
-      "Find and close clients who want to build AI-powered websites, agents, and LLM applications",
-      "Scout and partner with AI agents and builders who want to work on projects with us",
-      "Coordinate projects between clients and our network of builders and agents",
-      "Define strategy and lead business development to scale SkyHunter",
-      "Build partnerships and grow our community of builders and creators"
+      "Identify and qualify enterprise prospects seeking AI-powered websites, agents, and LLM applications",
+      "Close sales and establish long-term client relationships",
+      "Coordinate project scope, timeline, and delivery with technical partners",
+      "Develop go-to-market strategy and establish pricing models",
+      "Build strategic partnerships within the AI development ecosystem",
+      "Contribute to overall company strategy and growth planning"
     ],
-    "broughtFrom": "You bring: business development experience, ability to close deals, understanding of AI/tech landscape, strong network, and entrepreneurial mindset.",
+    "broughtFrom": "You bring: proven sales or business development track record, ability to understand technical requirements and communicate them clearly, strong network in enterprise or startup sectors, and entrepreneurial experience.",
     "tags": ["Full-time", "Business Development", "Equity"]
   },
   {
@@ -33,16 +34,17 @@
     "category": "Support agents",
     "status": "Hiring",
     "postedDaysAgo": 0,
-    "humanEdge": "Find talented people who want to join SkyHunter's community. Build our team and grow our network of builders, designers, and engineers passionate about AI.",
-    "summary": "Join SkyHunter as our Recruiter. Find and attract talented people who want to be part of our community—builders, designers, engineers, and creators passionate about AI-powered products. You'll build the team that shapes our future.",
+    "humanEdge": "Source and attract high-caliber engineers, designers, and product builders. Build a talent pipeline of professionals who are excited to work on cutting-edge AI projects.",
+    "summary": "SkyHunter is hiring a Recruiter to build the team and expand our community of builders. You will source talent across engineering, design, and product roles, manage the hiring pipeline from initial contact through offer, and help establish SkyHunter as an attractive destination for top technical talent. This role is critical to scaling our operations.",
     "responsibilities": [
-      "Source and attract talented builders, designers, and engineers to join SkyHunter",
-      "Scout people interested in joining our community and ecosystem",
-      "Screen candidates and manage the full hiring pipeline",
-      "Close offers and onboard new team members",
-      "Build and nurture our community of creators and builders"
+      "Source candidates through networks, job boards, and direct outreach",
+      "Conduct initial interviews and assess technical and cultural fit",
+      "Manage candidate pipeline and hiring timeline",
+      "Coordinate with hiring managers and close offers",
+      "Build long-term relationships with potential candidates",
+      "Develop recruitment strategy for key technical roles"
     ],
-    "broughtFrom": "You bring: recruiting or talent acquisition experience, strong networking skills, ability to identify talent, and passion for building communities.",
+    "broughtFrom": "You bring: 2+ years of technical recruiting or talent acquisition experience, strong network in tech/startup communities, excellent communication skills, and proven ability to close candidates.",
     "tags": ["Full-time", "Recruiting", "Community"]
   },
   {
@@ -56,14 +58,16 @@
     "category": "Workflow automation",
     "status": "Hiring",
     "postedDaysAgo": 0,
-    "humanEdge": "We route vetted agent-build projects to shops with capacity — real paid client work, not spec. Take what fits your stack.",
-    "summary": "Join the SkyHunter partner pool and pick up overflow agent builds from our client pipeline. A few projects a month, fully remote across the US, LATAM, and Europe.",
+    "humanEdge": "Take on well-scoped, vetted client projects building production-ready AI agents and LLM applications. Work with clear specifications and deliverables while maintaining work-life balance.",
+    "summary": "SkyHunter Partners is an overflow project network for experienced AI builders. We vet clients and specify projects clearly so builders can take on work that fits their schedule and expertise. Projects include AI agents, RAG systems, workflow automation, and LLM applications. This is contract work with well-defined scope and deliverables.",
     "responsibilities": [
-      "Claim scoped agent/LLM builds that match your stack",
-      "Ship to a clear spec with an eval bar and a demo",
-      "Keep tidy handoff docs so clients can run it themselves"
+      "Build production-ready AI agents and LLM applications per specification",
+      "Deliver working code with clear documentation and handoff",
+      "Maintain code quality and follow best practices",
+      "Meet agreed-upon timelines and deliverables",
+      "Communicate progress and any blockers to the project manager"
     ],
-    "broughtFrom": "Stack: shipped at least one LLM app in production — RAG, an agent, or a workflow integration.",
+    "broughtFrom": "Required: shipped at least one production LLM application (agent, RAG, or automation). Experience with: Claude API or similar LLM platforms, Python or TypeScript, and version control. Nice to have: experience with evaluation frameworks and prompt engineering.",
     "tags": ["Overflow work", "Vetted clients", "US · LATAM · Europe"]
   },
   {
