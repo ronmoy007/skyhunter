@@ -1,7 +1,15 @@
 import { Anthropic } from "@anthropic-ai/sdk";
 import { NextRequest, NextResponse } from "next/server";
+import { collectionGet } from "@/lib/cache";
 
 const client = new Anthropic();
+
+// Admin-editable settings (SkyHunter Admin → AI Assistant) live in the
+// `content` table under key "assistant". The defaults below apply until an
+// admin saves something; reads are cached with the rest of the content map.
+type AssistantSettings = { systemPrompt: string; model: string; maxTokens: number };
+const DEFAULT_MODEL = "claude-opus-5";
+const DEFAULT_MAX_TOKENS = 1024;
 
 const SYSTEM_PROMPT = `You are a helpful customer support assistant for SkyHunter, a product & AI studio that builds e-commerce, healthcare, and law websites, AI agents, and LLM apps for startups and small agencies.
 
@@ -40,12 +48,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const settings = await collectionGet<Partial<AssistantSettings>>("assistant", {});
+    const model = settings.model || DEFAULT_MODEL;
+    const maxTokens = Number(settings.maxTokens) > 0 ? Number(settings.maxTokens) : DEFAULT_MAX_TOKENS;
+
     console.log("Calling Claude API with", messages.length, "messages");
 
     const response = await client.messages.create({
-      model: "claude-opus-5",
-      max_tokens: 1024,
-      system: SYSTEM_PROMPT,
+      model,
+      max_tokens: maxTokens,
+      system: settings.systemPrompt?.trim() || SYSTEM_PROMPT,
       messages: messages.map((msg: any) => ({
         role: msg.role,
         content: msg.content,

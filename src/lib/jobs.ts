@@ -58,6 +58,57 @@ export const CATEGORIES = [
 // originals so the newest remote listings surface first.
 export const JOBS: Job[] = [
   {
+    id: "cofounder-hiring",
+    title: "CoFounder",
+    company: "SkyHunter",
+    location: "Remote (Global)",
+    mode: "Remote",
+    type: "Full-time",
+    salary: "Equity + salary",
+    category: "Support agents",
+    status: "Hiring",
+    postedDaysAgo: 1,
+    humanEdge:
+      "Work alongside the founding team to shape the vision of a product studio building AI-powered solutions. Help define strategy, lead business development, and scale operations.",
+    summary:
+      "We're looking for a visionary CoFounder to join SkyHunter's leadership team. You'll help shape the future of our AI product studio, drive business growth, and build the next generation of AI-powered websites, agents, and LLM applications.",
+    responsibilities: [
+      "Co-lead strategy and vision for SkyHunter's growth and product direction",
+      "Drive business development, partnerships, and customer acquisition",
+      "Build and mentor the team as we scale from 0 to 100",
+      "Oversee operations, fundraising, and strategic planning",
+    ],
+    broughtFrom:
+      "You bring: entrepreneurial experience, a track record in SaaS or tech, strong business acumen, and a passion for AI.",
+    tags: ["Full-time", "Leadership", "Equity"],
+  },
+  {
+    id: "hr-coordinator-hiring",
+    title: "HR Coordinator",
+    company: "SkyHunter",
+    location: "Remote (Global)",
+    mode: "Remote",
+    type: "Full-time",
+    salary: "$50k - $70k/year",
+    category: "Support agents",
+    status: "Hiring",
+    postedDaysAgo: 0,
+    humanEdge:
+      "Build the foundation for our growing team. Manage hiring, onboarding, and culture as we scale from 8 to 50+ people. Every interaction you have shapes how we grow.",
+    summary:
+      "Join SkyHunter as our first dedicated HR Coordinator. You'll own hiring, onboarding, culture initiatives, and people operations as we build a world-class team. This is a chance to shape company culture from the ground up.",
+    responsibilities: [
+      "Manage the full hiring lifecycle: job postings, screening, scheduling, and offer coordination",
+      "Design and execute onboarding programs for new hires",
+      "Develop company culture initiatives, team events, and employee engagement programs",
+      "Handle HR operations: documentation, benefits, compliance, and payroll coordination",
+      "Build HR systems and processes that scale with our growth",
+    ],
+    broughtFrom:
+      "You bring: 2-4 years of HR or recruiting experience, strong communication, organizational skills, and a passion for building great teams.",
+    tags: ["Full-time", "HR", "Remote"],
+  },
+  {
     id: "ecommerce-ai-storefront-build",
     title: "AI Storefront + Shopping Agent for a DTC Brand",
     company: "Copperleaf Goods",
