@@ -69,18 +69,19 @@ export const JOBS: Job[] = [
     status: "Hiring",
     postedDaysAgo: 1,
     humanEdge:
-      "Work alongside the founding team to shape the vision of a product studio building AI-powered solutions. Help define strategy, lead business development, and scale operations.",
+      "Find and close clients who need AI-powered websites, agents, and LLM apps built. Work with AI agents and builders in our network to deliver projects. Shape the future of our product studio.",
     summary:
-      "We're looking for a visionary CoFounder to join SkyHunter's leadership team. You'll help shape the future of our AI product studio, drive business growth, and build the next generation of AI-powered websites, agents, and LLM applications.",
+      "Join SkyHunter as CoFounder. Your mission: find clients who want to build AI projects, identify and partner with AI agents in our ecosystem, and coordinate builds. You'll drive growth and shape our studio's direction.",
     responsibilities: [
-      "Co-lead strategy and vision for SkyHunter's growth and product direction",
-      "Drive business development, partnerships, and customer acquisition",
-      "Build and mentor the team as we scale from 0 to 100",
-      "Oversee operations, fundraising, and strategic planning",
+      "Find and close clients who want to build AI-powered websites, agents, and LLM applications",
+      "Scout and partner with AI agents and builders who want to work on projects with us",
+      "Coordinate projects between clients and our network of builders and agents",
+      "Define strategy and lead business development to scale SkyHunter",
+      "Build partnerships and grow our community of builders and creators",
     ],
     broughtFrom:
-      "You bring: entrepreneurial experience, a track record in SaaS or tech, strong business acumen, and a passion for AI.",
-    tags: ["Full-time", "Leadership", "Equity"],
+      "You bring: business development experience, ability to close deals, understanding of AI/tech landscape, strong network, and entrepreneurial mindset.",
+    tags: ["Full-time", "Business Development", "Equity"],
   },
   {
     id: "recruiter-hiring",
@@ -94,19 +95,19 @@ export const JOBS: Job[] = [
     status: "Hiring",
     postedDaysAgo: 0,
     humanEdge:
-      "Build our team from scratch. Source, screen, and hire top talent as we grow from 8 to 50+ people. You're the gatekeeper of our culture and the architect of our team.",
+      "Find talented people who want to join SkyHunter's community. Build our team and grow our network of builders, designers, and engineers passionate about AI.",
     summary:
-      "Join SkyHunter as our first dedicated Recruiter. You'll own the full hiring lifecycle—from sourcing and screening to closing offers—as we build a world-class team. Help shape who we become by finding the right people.",
+      "Join SkyHunter as our Recruiter. Find and attract talented people who want to be part of our community—builders, designers, engineers, and creators passionate about AI-powered products. You'll build the team that shapes our future.",
     responsibilities: [
-      "Source and attract top talent through channels, networks, and outreach",
-      "Screen candidates, conduct initial interviews, and manage the hiring pipeline",
-      "Coordinate interview schedules and facilitate conversations with hiring teams",
-      "Close offers and manage candidate experience end-to-end",
-      "Partner with leadership to define hiring strategy and roles",
+      "Source and attract talented builders, designers, and engineers to join SkyHunter",
+      "Scout people interested in joining our community and ecosystem",
+      "Screen candidates and manage the full hiring pipeline",
+      "Close offers and onboard new team members",
+      "Build and nurture our community of creators and builders",
     ],
     broughtFrom:
-      "You bring: 3+ years of recruiting or talent acquisition experience, strong communication skills, ability to close, and passion for building teams.",
-    tags: ["Full-time", "Recruiting", "Remote"],
+      "You bring: recruiting or talent acquisition experience, strong networking skills, ability to identify talent, and passion for building communities.",
+    tags: ["Full-time", "Recruiting", "Community"],
   },
   {
     id: "ecommerce-ai-storefront-build",
