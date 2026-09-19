@@ -1,5 +1,51 @@
 [
   {
+    "id": "cofounder-hiring",
+    "title": "CoFounder",
+    "company": "SkyHunter",
+    "location": "Remote",
+    "mode": "Remote",
+    "type": "Full-time",
+    "salary": "Equity + salary",
+    "category": "Support agents",
+    "status": "Hiring",
+    "postedDaysAgo": 1,
+    "humanEdge": "Find and close clients who need AI-powered websites, agents, and LLM apps built. Work with AI agents and builders in our network to deliver projects. Shape the future of our product studio.",
+    "summary": "Join SkyHunter as CoFounder. Your mission: find clients who want to build AI projects, identify and partner with AI agents in our ecosystem, and coordinate builds. You'll drive growth and shape our studio's direction.",
+    "responsibilities": [
+      "Find and close clients who want to build AI-powered websites, agents, and LLM applications",
+      "Scout and partner with AI agents and builders who want to work on projects with us",
+      "Coordinate projects between clients and our network of builders and agents",
+      "Define strategy and lead business development to scale SkyHunter",
+      "Build partnerships and grow our community of builders and creators"
+    ],
+    "broughtFrom": "You bring: business development experience, ability to close deals, understanding of AI/tech landscape, strong network, and entrepreneurial mindset.",
+    "tags": ["Full-time", "Business Development", "Equity"]
+  },
+  {
+    "id": "recruiter-hiring",
+    "title": "Recruiter",
+    "company": "SkyHunter",
+    "location": "Remote",
+    "mode": "Remote",
+    "type": "Full-time",
+    "salary": "$55k - $75k/year",
+    "category": "Support agents",
+    "status": "Hiring",
+    "postedDaysAgo": 0,
+    "humanEdge": "Find talented people who want to join SkyHunter's community. Build our team and grow our network of builders, designers, and engineers passionate about AI.",
+    "summary": "Join SkyHunter as our Recruiter. Find and attract talented people who want to be part of our community—builders, designers, engineers, and creators passionate about AI-powered products. You'll build the team that shapes our future.",
+    "responsibilities": [
+      "Source and attract talented builders, designers, and engineers to join SkyHunter",
+      "Scout people interested in joining our community and ecosystem",
+      "Screen candidates and manage the full hiring pipeline",
+      "Close offers and onboard new team members",
+      "Build and nurture our community of creators and builders"
+    ],
+    "broughtFrom": "You bring: recruiting or talent acquisition experience, strong networking skills, ability to identify talent, and passion for building communities.",
+    "tags": ["Full-time", "Recruiting", "Community"]
+  },
+  {
     "id": "skyhunter-partner-agent-builds",
     "title": "Agent Build Partner (Overflow Work)",
     "company": "SkyHunter Partners",
