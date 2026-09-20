@@ -11,6 +11,7 @@ import { PresenceBeacon } from "@/components/PresenceBeacon";
 import { Analytics } from "@/components/Analytics";
 import { ConversionListener } from "@/components/ConversionListener";
 import { AIAssistant } from "@/components/AIAssistant";
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { SITE_URL, SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION } from "@/lib/site";
 
 // Variable fonts: omitting `weight` loads a single variable file that covers
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
   title: `${SITE_NAME} — ${SITE_TAGLINE}: a studio building websites, AI agents & LLM apps`,
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
+  manifest: "/manifest.webmanifest",
   keywords: [
     "SkyHunter",
     "AI development studio",
@@ -146,6 +148,7 @@ export default function RootLayout({
         </a>
         <AuthProvider>
           <CallProvider>
+            <ServiceWorkerRegister />
             <Navbar />
             <main id="main">{children}</main>
             <Footer />
