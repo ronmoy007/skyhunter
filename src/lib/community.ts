@@ -212,7 +212,7 @@ export const OFFERINGS: Offering[] = [
     icon: "briefcase",
     title: "Templates & blueprints",
     body: "Production-ready agent starters — RAG, support agent, workflow automation, and voice — with a note on what to reuse and what to swap.",
-    href: "/work",
+    href: "/career",
     cta: "Browse blueprints",
   },
   {
@@ -266,7 +266,7 @@ export const INCOME_PATHS: IncomePath[] = [
     body: "Scope, build, and hand off a defined agent — RAG bot, automation, or support agent — on short, paid engagements.",
     earn: "$3K–$12K / build",
     effort: "Project-based",
-    href: "/work",
+    href: "/career",
     cta: "Browse bounties",
   },
   {
@@ -275,7 +275,7 @@ export const INCOME_PATHS: IncomePath[] = [
     body: "Build agents behind the scenes for shops that sell to the client. Steady work without the sales overhead.",
     earn: "$40–90 / hr",
     effort: "Flexible, part-time",
-    href: "/work",
+    href: "/career",
     cta: "See white-label work",
   },
   {

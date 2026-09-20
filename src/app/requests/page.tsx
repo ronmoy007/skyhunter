@@ -141,7 +141,7 @@ export default async function RequestsPage() {
           <div className="mt-4 rounded-2xl border border-dashed border-steel-line bg-navy/40 p-8 text-center">
             <p className="text-mist">You haven&apos;t applied to any jobs yet.</p>
             <Link
-              href="/work"
+              href="/career"
               className="mt-4 inline-flex items-center gap-2 rounded-lg bg-blue-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-400"
             >
               Browse jobs <ArrowRight className="h-4 w-4" />
