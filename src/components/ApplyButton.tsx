@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "./AuthProvider";
 import { Check, Spinner } from "./icons";
+import { trackJobApplicationConversion } from "@/lib/gtag";
 
 export function ApplyButton({
   jobId,
@@ -123,6 +124,7 @@ export function ApplyButton({
       if (!res.ok || !json.ok) throw new Error(json.error || "Couldn't submit.");
       setApplied(true);
       setOpen(false);
+      trackJobApplicationConversion(jobTitle);
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong.");
