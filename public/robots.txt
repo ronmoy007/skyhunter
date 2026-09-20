@@ -1,0 +1,21 @@
+# SkyHunter Robots Configuration
+# Allow Google and other search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /private
+Sitemap: https://skyhunterlab.online/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /api/

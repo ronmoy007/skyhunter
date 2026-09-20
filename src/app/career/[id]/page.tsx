@@ -38,25 +38,40 @@ export default async function JobDetailPage({
   const job = await getJobById(id);
   if (!job) notFound();
 
-  // CreativeWork structured data — this is a portfolio case study (a build we
-  // shipped for a client), not a job listing.
+  // JobPosting structured data for Google Jobs indexing
   const dateCreated = new Date(
     Date.now() - (job.postedDaysAgo || 0) * 86400000,
   ).toISOString();
   const jobLd = {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    name: job.title,
-    headline: job.title,
+    "@type": "JobPosting",
+    title: job.title,
     description: [job.summary, job.humanEdge, ...(job.responsibilities ?? [])]
       .filter(Boolean)
-      .join(" "),
-    dateCreated,
-    about: job.category,
-    keywords: (job.tags ?? []).join(", "),
-    url: `${SITE_URL}/work/${job.id}`,
-    creator: { "@type": "Organization", name: "SkyHunter", url: SITE_URL },
-    author: { "@type": "Organization", name: "SkyHunter", url: SITE_URL },
+      .join("\n\n"),
+    datePosted: dateCreated,
+    validThrough: new Date(Date.now() + 90 * 86400000).toISOString(),
+    employmentType: job.type,
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "SkyHunter",
+      sameAs: SITE_URL,
+      logo: `${SITE_URL}/logo.png`,
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "Worldwide",
+        addressRegion: job.location === "Remote" ? "Remote" : job.location,
+      },
+    },
+    baseSalary: job.salary ? {
+      "@type": "PriceSpecification",
+      priceCurrency: "USD",
+      price: job.salary,
+    } : undefined,
+    url: `${SITE_URL}/career/${job.id}`,
   };
 
   return (
