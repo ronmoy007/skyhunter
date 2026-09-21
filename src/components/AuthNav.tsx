@@ -110,18 +110,18 @@ export function AuthNav({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1 sm:gap-2">
       {!compact && (
         <Link
           href="/signin"
-          className="rounded-lg px-4 py-2.5 text-base font-medium text-mist transition-colors hover:bg-abyss hover:text-chrome"
+          className="hidden sm:inline-block rounded-lg px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-mist transition-colors hover:bg-abyss hover:text-chrome"
         >
           Sign in
         </Link>
       )}
       <Link
         href="/signup"
-        className="rounded-lg bg-blue-500 px-5 py-2.5 text-base font-semibold text-white transition-colors hover:bg-blue-400"
+        className="rounded-lg bg-blue-500 px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-blue-400 active:bg-blue-600 whitespace-nowrap"
       >
         Sign Up
       </Link>
